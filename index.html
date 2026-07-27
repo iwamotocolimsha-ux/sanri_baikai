@@ -1,1725 +1,534 @@
-<!DOCTYPE html> <html lang="ja"> <head> <meta charset="UTF-8">   <meta name="robots" content="noindex"><meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>ヤナショーの仕事図鑑｜柳昌建設株式会社</title> <style> :root { --ink: #15181d; --text: #27313c; --muted: #66717f; --line: #e7e0d7; --base: #fbf7f0; --paper: #fffdf8; --navy: #182d45; --blue: #22577a; --cyan: #4c9aa2; --orange: #e27b2d; --yellow: #f2bf4b; --wood: #8b5e35; --shadow: 0 20px 60px rgba(25, 36, 48, .13); --shadow-soft: 0 12px 32px rgba(25, 36, 48, .09); --radius-xl: 32px; --radius-lg: 24px; --radius-md: 16px; --max: 1180px; }
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-
-body {
-  margin: 0;
-  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
-  color: var(--text);
-  background:
-    radial-gradient(circle at 18% 10%, rgba(242, 191, 75, .22) 0 14%, transparent 31%),
-    radial-gradient(circle at 84% 6%, rgba(76, 154, 162, .18) 0 13%, transparent 30%),
-    linear-gradient(180deg, #fffaf2 0%, #fbf7f0 38%, #f4efe7 100%);
-  line-height: 1.75;
-  letter-spacing: .02em;
-  overflow-x: hidden;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-img, svg {
-  max-width: 100%;
-  display: block;
-}
-
-.site-wrap {
-  overflow: hidden;
-  position: relative;
-}
-
-.site-wrap::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background-image:
-    linear-gradient(rgba(24, 45, 69, .035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(24, 45, 69, .035) 1px, transparent 1px);
-  background-size: 44px 44px;
-  mask-image: linear-gradient(180deg, rgba(0,0,0,.75), rgba(0,0,0,.15));
-  z-index: -1;
-}
-
-.container {
-  width: min(var(--max), calc(100% - 40px));
-  margin: 0 auto;
-}
-
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: rgba(255, 250, 242, .88);
-  backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(231, 224, 215, .9);
-}
-
-.header-inner {
-  width: min(1240px, calc(100% - 36px));
-  margin: 0 auto;
-  min-height: 78px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  min-width: 190px;
-}
-
-.brand-mark {
-  width: 46px;
-  height: 46px;
-  border-radius: 14px;
-  background: var(--navy);
-  position: relative;
-  box-shadow: 0 10px 22px rgba(24, 45, 69, .22);
-  overflow: hidden;
-  flex: 0 0 auto;
-}
-
-.brand-mark::before,
-.brand-mark::after {
-  content: "";
-  position: absolute;
-  background: var(--yellow);
-  transform: rotate(-18deg);
-  border-radius: 3px;
-}
-
-.brand-mark::before {
-  width: 14px;
-  height: 58px;
-  left: 12px;
-  top: -6px;
-}
-
-.brand-mark::after {
-  width: 9px;
-  height: 58px;
-  left: 28px;
-  top: -6px;
-  background: var(--cyan);
-}
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-}
-
-.brand-main {
-  font-weight: 900;
-  color: var(--navy);
-  font-size: 17px;
-  letter-spacing: .06em;
-}
-
-.brand-sub {
-  font-size: 11px;
-  color: var(--muted);
-  letter-spacing: .18em;
-  text-transform: uppercase;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: clamp(14px, 2.4vw, 30px);
-  font-size: 14px;
-  font-weight: 800;
-  color: var(--navy);
-}
-
-.nav a {
-  position: relative;
-  padding: 8px 0;
-  white-space: nowrap;
-}
-
-.nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 3px;
-  width: 100%;
-  height: 2px;
-  background: var(--orange);
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform .25s ease;
-}
-
-.nav a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-.header-cta {
-  padding: 12px 18px;
-  border-radius: 999px;
-  background: var(--navy);
-  color: #fff;
-  font-weight: 900;
-  font-size: 13px;
-  white-space: nowrap;
-  box-shadow: 0 12px 24px rgba(24, 45, 69, .2);
-}
-
-.hero {
-  position: relative;
-  padding: clamp(56px, 8vw, 112px) 0 clamp(54px, 8vw, 92px);
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
-  gap: clamp(32px, 5vw, 72px);
-  align-items: center;
-}
-
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 14px;
-  border: 1px solid rgba(24, 45, 69, .14);
-  border-radius: 999px;
-  background: rgba(255,255,255,.68);
-  color: var(--blue);
-  font-size: 13px;
-  font-weight: 900;
-  letter-spacing: .12em;
-  box-shadow: 0 8px 22px rgba(25, 36, 48, .06);
-}
-
-.eyebrow::before {
-  content: "";
-  width: 9px;
-  height: 9px;
-  border-radius: 99px;
-  background: var(--orange);
-  box-shadow: 0 0 0 5px rgba(226, 123, 45, .13);
-}
-
-h1 {
-  margin: 24px 0 20px;
-  color: var(--ink);
-  font-size: clamp(42px, 7vw, 92px);
-  line-height: .98;
-  letter-spacing: -.055em;
-  font-weight: 950;
-}
-
-.hero h1 .accent {
-  color: var(--orange);
-  display: inline-block;
-}
-
-.hero-lead {
-  font-size: clamp(18px, 2.1vw, 25px);
-  font-weight: 900;
-  color: var(--navy);
-  line-height: 1.72;
-  margin: 0 0 18px;
-}
-
-.hero-text {
-  margin: 0;
-  color: var(--text);
-  font-size: 16px;
-  max-width: 660px;
-}
-
-.hero-actions {
-  margin-top: 30px;
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 50px;
-  padding: 13px 21px;
-  border-radius: 999px;
-  font-weight: 900;
-  font-size: 15px;
-  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-}
-
-.btn-primary {
-  color: #fff;
-  background: var(--orange);
-  box-shadow: 0 16px 34px rgba(226, 123, 45, .28);
-}
-
-.btn-secondary {
-  color: var(--navy);
-  background: rgba(255,255,255,.72);
-  border: 1px solid rgba(24, 45, 69, .14);
-  box-shadow: 0 12px 30px rgba(25, 36, 48, .08);
-}
-
-.hero-note {
-  margin-top: 22px;
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.hero-note span {
-  color: var(--orange);
-  font-size: 16px;
-  line-height: 1.4;
-}
-
-.visual-card {
-  position: relative;
-  min-height: 580px;
-  border-radius: 42px;
-  background:
-    linear-gradient(140deg, rgba(24, 45, 69, .98), rgba(34, 87, 122, .94)),
-    var(--navy);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-  isolation: isolate;
-}
-
-.visual-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 24% 20%, rgba(242, 191, 75, .35) 0 10%, transparent 24%),
-    radial-gradient(circle at 82% 22%, rgba(76, 154, 162, .38) 0 8%, transparent 25%),
-    linear-gradient(120deg, transparent 0 44%, rgba(255,255,255,.08) 44% 46%, transparent 46% 100%);
-  z-index: -1;
-}
-
-.blueprint {
-  position: absolute;
-  inset: 30px;
-  border: 1px solid rgba(255,255,255,.18);
-  border-radius: 30px;
-  overflow: hidden;
-}
-
-.blueprint::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px);
-  background-size: 32px 32px;
-}
-
-.frame-structure {
-  position: absolute;
-  left: 10%;
-  right: 10%;
-  bottom: 11%;
-  height: 58%;
-  border-bottom: 10px solid rgba(255,255,255,.82);
-  border-left: 10px solid rgba(255,255,255,.82);
-  border-right: 10px solid rgba(255,255,255,.82);
-}
-
-.frame-structure::before,
-.frame-structure::after {
-  content: "";
-  position: absolute;
-  left: 16%;
-  right: 16%;
-  height: 10px;
-  background: rgba(255,255,255,.82);
-}
-
-.frame-structure::before {
-  top: 28%;
-}
-
-.frame-structure::after {
-  top: 62%;
-}
-
-.pillar {
-  position: absolute;
-  bottom: 0;
-  width: 10px;
-  height: 100%;
-  background: rgba(255,255,255,.82);
-}
-
-.pillar.p1 { left: 30%; }
-.pillar.p2 { left: 50%; }
-.pillar.p3 { left: 70%; }
-
-.work-label {
-  position: absolute;
-  border-radius: 999px;
-  color: var(--navy);
-  background: rgba(255,255,255,.9);
-  padding: 10px 14px;
-  font-size: 13px;
-  font-weight: 950;
-  box-shadow: 0 12px 28px rgba(0,0,0,.18);
-}
-
-.work-label.one {
-  left: 42px;
-  top: 52px;
-}
-
-.work-label.two {
-  right: 42px;
-  top: 162px;
-  background: var(--yellow);
-}
-
-.work-label.three {
-  left: 58px;
-  bottom: 72px;
-  background: #fff4de;
-}
-
-.yanasho-badge {
-  position: absolute;
-  right: 38px;
-  bottom: 36px;
-  width: 150px;
-  height: 150px;
-  border-radius: 38px;
-  background: rgba(255,255,255,.12);
-  border: 1px solid rgba(255,255,255,.2);
-  color: #fff;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  font-weight: 950;
-  line-height: 1.15;
-  transform: rotate(-5deg);
-  backdrop-filter: blur(10px);
-}
-
-.yanasho-badge strong {
-  display: block;
-  font-size: 28px;
-  letter-spacing: -.04em;
-}
-
-.yanasho-badge small {
-  display: block;
-  margin-top: 7px;
-  font-size: 11px;
-  letter-spacing: .12em;
-  color: rgba(255,255,255,.74);
-}
-
-.section {
-  padding: clamp(64px, 8vw, 108px) 0;
-  position: relative;
-}
-
-.section-head {
-  display: grid;
-  grid-template-columns: minmax(0, .78fr) minmax(0, 1fr);
-  gap: 38px;
-  align-items: end;
-  margin-bottom: 38px;
-}
-
-.section-kicker {
-  margin: 0 0 10px;
-  color: var(--orange);
-  font-weight: 950;
-  letter-spacing: .14em;
-  font-size: 13px;
-  text-transform: uppercase;
-}
-
-h2 {
-  margin: 0;
-  color: var(--ink);
-  font-size: clamp(30px, 4.3vw, 56px);
-  line-height: 1.12;
-  letter-spacing: -.04em;
-  font-weight: 950;
-}
-
-.section-lead {
-  margin: 0;
-  color: var(--text);
-  font-size: 16px;
-}
-
-.intro-panel {
-  background: rgba(255,255,255,.72);
-  border: 1px solid rgba(231, 224, 215, .92);
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-soft);
-  padding: clamp(24px, 4vw, 42px);
-  display: grid;
-  grid-template-columns: minmax(0, .92fr) minmax(280px, .8fr);
-  gap: clamp(26px, 5vw, 56px);
-  align-items: center;
-}
-
-.explain-title {
-  margin: 0 0 14px;
-  color: var(--navy);
-  font-size: clamp(24px, 3.2vw, 42px);
-  line-height: 1.24;
-  letter-spacing: -.03em;
-  font-weight: 950;
-}
-
-.text-large {
-  font-size: 17px;
-  margin: 0;
-}
-
-.analogy {
-  margin-top: 24px;
-  padding: 18px 20px;
-  border-radius: 20px;
-  background: #fff4df;
-  border: 1px solid rgba(226, 123, 45, .18);
-  color: #49351f;
-  font-weight: 850;
-}
-
-.mold-graphic {
-  aspect-ratio: 1 / .88;
-  min-height: 330px;
-  border-radius: 30px;
-  background:
-    radial-gradient(circle at 28% 22%, rgba(242, 191, 75, .32) 0 12%, transparent 26%),
-    linear-gradient(150deg, #f6e4c5, #ffffff 62%, #eef8f8);
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgba(24, 45, 69, .1);
-}
-
-.mold-base {
-  position: absolute;
-  left: 14%;
-  right: 14%;
-  bottom: 18%;
-  height: 34%;
-  border: 10px solid var(--wood);
-  border-top: 0;
-  border-radius: 0 0 14px 14px;
-  background: linear-gradient(180deg, rgba(76,154,162,.16), rgba(76,154,162,.28));
-  box-shadow: inset 0 -18px 0 rgba(34, 87, 122, .08);
-}
-
-.mold-base::before {
-  content: "";
-  position: absolute;
-  left: 8%;
-  right: 8%;
-  top: -42px;
-  height: 42px;
-  background: rgba(34,87,122,.72);
-  clip-path: polygon(0 0, 100% 0, 83% 100%, 17% 100%);
-}
-
-.mold-arrow {
-  position: absolute;
-  top: 18%;
-  left: 50%;
-  width: 8px;
-  height: 94px;
-  background: var(--orange);
-  border-radius: 99px;
-  transform: translateX(-50%);
-}
-
-.mold-arrow::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -2px;
-  width: 24px;
-  height: 24px;
-  border-right: 8px solid var(--orange);
-  border-bottom: 8px solid var(--orange);
-  transform: translateX(-50%) rotate(45deg);
-  border-radius: 2px;
-}
-
-.mold-caption {
-  position: absolute;
-  left: 22px;
-  right: 22px;
-  bottom: 22px;
-  padding: 12px 14px;
-  border-radius: 16px;
-  background: rgba(255,255,255,.82);
-  color: var(--navy);
-  font-weight: 950;
-  font-size: 14px;
-  text-align: center;
-  box-shadow: 0 10px 20px rgba(25,36,48,.08);
-}
-
-.process {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.process-card {
-  min-height: 248px;
-  padding: 22px 18px;
-  border-radius: 26px;
-  background: rgba(255,255,255,.72);
-  border: 1px solid rgba(231, 224, 215, .95);
-  box-shadow: 0 12px 28px rgba(25,36,48,.07);
-  position: relative;
-  overflow: hidden;
-}
-
-.process-card::before {
-  content: attr(data-step);
-  position: absolute;
-  right: 16px;
-  top: 10px;
-  color: rgba(24, 45, 69, .08);
-  font-size: 56px;
-  line-height: 1;
-  font-weight: 950;
-  letter-spacing: -.08em;
-}
-
-.process-icon {
-  width: 54px;
-  height: 54px;
-  border-radius: 18px;
-  background: var(--navy);
-  color: #fff;
-  display: grid;
-  place-items: center;
-  font-weight: 950;
-  font-size: 22px;
-  margin-bottom: 18px;
-  position: relative;
-  z-index: 1;
-}
-
-.process-card:nth-child(2) .process-icon { background: var(--blue); }
-.process-card:nth-child(3) .process-icon { background: var(--orange); }
-.process-card:nth-child(4) .process-icon { background: var(--cyan); }
-.process-card:nth-child(5) .process-icon { background: var(--wood); }
-
-.process-card h3 {
-  margin: 0 0 10px;
-  color: var(--navy);
-  font-size: 19px;
-  line-height: 1.35;
-  font-weight: 950;
-  position: relative;
-  z-index: 1;
-}
-
-.process-card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.75;
-  position: relative;
-  z-index: 1;
-}
-
-.day-section {
-  background:
-    linear-gradient(180deg, rgba(24,45,69,.96), rgba(20,38,58,.98)),
-    var(--navy);
-  color: #fff;
-  overflow: hidden;
-}
-
-.day-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 10% 20%, rgba(242,191,75,.22) 0 11%, transparent 28%),
-    radial-gradient(circle at 87% 18%, rgba(76,154,162,.26) 0 12%, transparent 27%),
-    linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
-  background-size: auto, auto, 46px 46px, 46px 46px;
-  pointer-events: none;
-}
-
-.day-section .section-kicker,
-.day-section h2,
-.day-section .section-lead {
-  color: #fff;
-  position: relative;
-  z-index: 1;
-}
-
-.day-section .section-kicker {
-  color: var(--yellow);
-}
-
-.timeline {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  gap: 14px;
-}
-
-.time-row {
-  display: grid;
-  grid-template-columns: 104px minmax(0, .48fr) minmax(0, 1fr);
-  gap: 16px;
-  align-items: stretch;
-  padding: 16px;
-  border-radius: 24px;
-  background: rgba(255,255,255,.08);
-  border: 1px solid rgba(255,255,255,.14);
-  backdrop-filter: blur(8px);
-}
-
-.time {
-  display: grid;
-  place-items: center;
-  border-radius: 18px;
-  background: rgba(255,255,255,.12);
-  color: var(--yellow);
-  font-weight: 950;
-  font-size: 20px;
-  letter-spacing: -.02em;
-}
-
-.time-title {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 950;
-}
-
-.time-desc {
-  margin: 0;
-  color: rgba(255,255,255,.78);
-  font-size: 14px;
-  line-height: 1.75;
-}
-
-.safe-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.safe-card {
-  background: rgba(255,255,255,.75);
-  border: 1px solid rgba(231,224,215,.95);
-  border-radius: 28px;
-  padding: 26px;
-  box-shadow: var(--shadow-soft);
-}
-
-.safe-card strong {
-  display: inline-flex;
-  width: 48px;
-  height: 48px;
-  border-radius: 16px;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  background: var(--orange);
-  font-size: 22px;
-  margin-bottom: 18px;
-}
-
-.safe-card:nth-child(2) strong { background: var(--blue); }
-.safe-card:nth-child(3) strong { background: var(--cyan); }
-
-.safe-card h3 {
-  margin: 0 0 10px;
-  color: var(--navy);
-  font-size: 21px;
-  line-height: 1.35;
-  font-weight: 950;
-}
-
-.safe-card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 15px;
-}
-
-.skills {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.skill {
-  min-height: 180px;
-  border-radius: 26px;
-  padding: 20px;
-  background: var(--paper);
-  border: 1px solid rgba(231,224,215,.92);
-  box-shadow: 0 10px 24px rgba(25,36,48,.06);
-  position: relative;
-  overflow: hidden;
-}
-
-.skill::after {
-  content: "";
-  position: absolute;
-  right: -26px;
-  bottom: -26px;
-  width: 86px;
-  height: 86px;
-  border-radius: 999px;
-  background: rgba(242,191,75,.26);
-}
-
-.skill b {
-  display: block;
-  color: var(--orange);
-  font-size: 13px;
-  font-weight: 950;
-  letter-spacing: .12em;
-  margin-bottom: 14px;
-}
-
-.skill h3 {
-  margin: 0 0 10px;
-  color: var(--navy);
-  font-size: 20px;
-  line-height: 1.32;
-  font-weight: 950;
-}
-
-.skill p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.message-panel {
-  position: relative;
-  background:
-    linear-gradient(135deg, rgba(255,255,255,.83), rgba(255,244,223,.75));
-  border: 1px solid rgba(231,224,215,.94);
-  border-radius: 36px;
-  padding: clamp(28px, 5vw, 54px);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-}
-
-.message-panel::before {
-  content: "YANASHO";
-  position: absolute;
-  right: -18px;
-  top: -38px;
-  color: rgba(24,45,69,.055);
-  font-size: clamp(74px, 13vw, 170px);
-  line-height: 1;
-  font-weight: 950;
-  letter-spacing: -.08em;
-}
-
-.message-grid {
-  display: grid;
-  grid-template-columns: minmax(230px, .52fr) minmax(0, 1fr);
-  gap: clamp(26px, 5vw, 54px);
-  position: relative;
-  z-index: 1;
-  align-items: center;
-}
-
-.person-abstract {
-  min-height: 330px;
-  border-radius: 30px;
-  background:
-    radial-gradient(circle at 50% 27%, #f4c06e 0 46px, transparent 47px),
-    linear-gradient(180deg, transparent 0 38%, var(--navy) 39% 100%);
-  position: relative;
-  overflow: hidden;
-  box-shadow: inset 0 0 0 1px rgba(24,45,69,.12);
-}
-
-.person-abstract::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 42%;
-  width: 190px;
-  height: 230px;
-  transform: translateX(-50%);
-  border-radius: 80px 80px 20px 20px;
-  background: var(--orange);
-}
-
-.person-abstract::after {
-  content: "代表メッセージ";
-  position: absolute;
-  left: 22px;
-  right: 22px;
-  bottom: 22px;
-  border-radius: 18px;
-  background: rgba(255,255,255,.88);
-  color: var(--navy);
-  font-weight: 950;
-  text-align: center;
-  padding: 14px;
-  box-shadow: 0 12px 26px rgba(0,0,0,.12);
-}
-
-.message-text h2 {
-  margin-bottom: 20px;
-}
-
-.message-text p {
-  margin: 0 0 14px;
-}
-
-.message-text p:last-child {
-  margin-bottom: 0;
-  font-weight: 900;
-  color: var(--navy);
-}
-
-.works-grid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.work-card {
-  border-radius: 26px;
-  background: rgba(255,255,255,.76);
-  border: 1px solid rgba(231,224,215,.96);
-  overflow: hidden;
-  box-shadow: 0 12px 26px rgba(25,36,48,.06);
-}
-
-.work-visual {
-  height: 142px;
-  position: relative;
-  background:
-    linear-gradient(150deg, rgba(24,45,69,.92), rgba(34,87,122,.84));
-  overflow: hidden;
-}
-
-.work-visual::before {
-  content: "";
-  position: absolute;
-  left: 18px;
-  right: 18px;
-  bottom: 18px;
-  height: 56px;
-  border: 7px solid rgba(255,255,255,.78);
-  border-bottom: 0;
-}
-
-.work-visual::after {
-  content: "";
-  position: absolute;
-  right: -22px;
-  top: -22px;
-  width: 96px;
-  height: 96px;
-  border-radius: 999px;
-  background: rgba(242,191,75,.48);
-}
-
-.work-body {
-  padding: 18px;
-}
-
-.work-body h3 {
-  margin: 0 0 8px;
-  color: var(--navy);
-  font-size: 17px;
-  line-height: 1.35;
-  font-weight: 950;
-}
-
-.work-body p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.65;
-}
-
-.qa-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.qa {
-  border-radius: 28px;
-  background: rgba(255,255,255,.76);
-  border: 1px solid rgba(231,224,215,.95);
-  box-shadow: 0 12px 28px rgba(25,36,48,.06);
-  padding: 24px;
-}
-
-.qa h3 {
-  margin: 0 0 10px;
-  color: var(--navy);
-  font-size: 19px;
-  line-height: 1.35;
-  font-weight: 950;
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-}
-
-.qa h3 span {
-  color: var(--orange);
-  flex: 0 0 auto;
-}
-
-.qa p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 15px;
-}
-
-.closing {
-  padding: clamp(64px, 8vw, 110px) 0;
-}
-
-.closing-card {
-  position: relative;
-  border-radius: 42px;
-  background:
-    radial-gradient(circle at 12% 20%, rgba(242,191,75,.22) 0 14%, transparent 34%),
-    linear-gradient(135deg, #182d45, #22577a);
-  color: #fff;
-  box-shadow: var(--shadow);
-  padding: clamp(32px, 6vw, 70px);
-  overflow: hidden;
-  text-align: center;
-}
-
-.closing-card::before,
-.closing-card::after {
-  content: "";
-  position: absolute;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.18);
-}
-
-.closing-card::before {
-  width: 330px;
-  height: 330px;
-  left: -110px;
-  bottom: -160px;
-}
-
-.closing-card::after {
-  width: 220px;
-  height: 220px;
-  right: -80px;
-  top: -80px;
-  background: rgba(255,255,255,.05);
-}
-
-.closing-card h2 {
-  color: #fff;
-  position: relative;
-  z-index: 1;
-  margin-bottom: 18px;
-}
-
-.closing-card p {
-  margin: 0 auto 28px;
-  max-width: 780px;
-  color: rgba(255,255,255,.84);
-  font-size: 16px;
-  position: relative;
-  z-index: 1;
-}
-
-.closing-actions {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 1;
-}
-
-.closing-actions .btn-primary {
-  background: var(--yellow);
-  color: var(--navy);
-  box-shadow: 0 16px 34px rgba(242,191,75,.22);
-}
-
-.closing-actions .btn-secondary {
-  background: rgba(255,255,255,.12);
-  color: #fff;
-  border-color: rgba(255,255,255,.25);
-}
-
-.footer {
-  padding: 38px 0;
-  border-top: 1px solid rgba(231,224,215,.92);
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.footer-inner {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.to-top {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 48px;
-  height: 48px;
-  border-radius: 999px;
-  background: var(--navy);
-  color: #fff;
-  border: 0;
-  display: grid;
-  place-items: center;
-  font-size: 20px;
-  font-weight: 950;
-  box-shadow: 0 14px 28px rgba(24,45,69,.25);
-  cursor: pointer;
-  z-index: 40;
-  opacity: 0;
-  transform: translateY(12px);
-  pointer-events: none;
-  transition: opacity .25s ease, transform .25s ease;
-}
-
-.to-top.is-show {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-
-@media (max-width: 1040px) {
-  .nav {
-    display: none;
-  }
-
-  .hero-grid,
-  .intro-panel,
-  .section-head,
-  .message-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .visual-card {
-    min-height: 500px;
-  }
-
-  .process {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .skills,
-  .works-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .safe-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .section-head {
-    gap: 16px;
-  }
-}
-
-@media (max-width: 760px) {
-  .container {
-    width: min(100% - 28px, var(--max));
-  }
-
-  .header-inner {
-    width: calc(100% - 24px);
-    min-height: 66px;
-    gap: 12px;
-  }
-
-  .brand {
-    min-width: 0;
-  }
-
-  .brand-mark {
-    width: 40px;
-    height: 40px;
-    border-radius: 12px;
-  }
-
-  .brand-main {
-    font-size: 14px;
-  }
-
-  .brand-sub {
-    font-size: 9px;
-  }
-
-  .header-cta {
-    padding: 10px 12px;
-    font-size: 12px;
-  }
-
-  .hero {
-    padding-top: 42px;
-  }
-
-  h1 {
-    font-size: clamp(40px, 14vw, 62px);
-  }
-
-  .hero-actions,
-  .closing-actions {
-    align-items: stretch;
-  }
-
-  .btn {
-    width: 100%;
-  }
-
-  .visual-card {
-    min-height: 430px;
-    border-radius: 30px;
-  }
-
-  .blueprint {
-    inset: 18px;
-    border-radius: 22px;
-  }
-
-  .work-label {
-    font-size: 11px;
-    padding: 8px 10px;
-  }
-
-  .work-label.one {
-    left: 24px;
-    top: 32px;
-  }
-
-  .work-label.two {
-    right: 24px;
-    top: 110px;
-  }
-
-  .work-label.three {
-    left: 24px;
-    bottom: 62px;
-  }
-
-  .yanasho-badge {
-    width: 116px;
-    height: 116px;
-    right: 24px;
-    bottom: 24px;
-    border-radius: 28px;
-  }
-
-  .yanasho-badge strong {
-    font-size: 22px;
-  }
-
-  .process,
-  .skills,
-  .works-grid,
-  .qa-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .time-row {
-    grid-template-columns: 78px minmax(0, 1fr);
-  }
-
-  .time-desc {
-    grid-column: 1 / -1;
-  }
-
-  .mold-graphic {
-    min-height: 280px;
-  }
-
-  .message-panel,
-  .closing-card {
-    border-radius: 30px;
-  }
-
-  .person-abstract {
-    min-height: 270px;
-  }
-
-  .footer-inner {
-    display: block;
-  }
-
-  .footer-inner div + div {
-    margin-top: 8px;
-  }
-}
-
-@media (max-width: 420px) {
-  .header-cta {
-    display: none;
-  }
-
-  .time-row {
-    grid-template-columns: 1fr;
-  }
-
-  .time {
-    min-height: 54px;
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .fade-in {
-    opacity: 0;
-    transform: translateY(22px);
-    transition: opacity .7s ease, transform .7s ease;
-  }
-
-  .fade-in.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style> </head> <body> <div class="site-wrap" id="top"> <header class="header"> <div class="header-inner"> <a class="brand" href="#top" aria-label="柳昌建設株式会社 トップへ"> <span class="brand-mark" aria-hidden="true"></span> <span class="brand-text"> <span class="brand-main">柳昌建設株式会社</span> <span class="brand-sub">Yanasho Works Guide</span> </span> </a>
-    <nav class="nav" aria-label="ページ内ナビゲーション">
-      <a href="#about">型枠工事とは</a>
-      <a href="#flow">仕事の流れ</a>
-      <a href="#day">1日の仕事</a>
-      <a href="#support">育て方</a>
-      <a href="#works">実績</a>
-    </nav>
-
-    <a class="header-cta" href="#message">高校生のみなさんへ</a>
+<!DOCTYPE html> <html lang="ja"> <head> <meta charset="UTF-8">  <meta name="robots" content="noindex"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" content="柳昌建設株式会社の型枠工事を、高校生や保護者にもわかりやすく紹介する仕事図鑑ページです。"> <title>ヤナショーの仕事図鑑｜柳昌建設株式会社</title> <style> :root { --navy: #0f2f49; --navy-dark: #092236; --navy-light: #1d4968; --orange: #e97332; --orange-light: #fff0e4; --yellow: #f4c95d; --blue-green: #3f8c91; --cream: #f7f2e9; --white: #ffffff; --ink: #18232d; --text: #3f4c58; --muted: #75808a; --line: #ded8cf; --shadow: 0 22px 60px rgba(15, 47, 73, 0.13); --shadow-soft: 0 12px 32px rgba(15, 47, 73, 0.08); --radius-xl: 36px; --radius-lg: 26px; --radius-md: 18px; --container: 1180px; } *, *::before, *::after { box-sizing: border-box; } html { scroll-behavior: smooth; overflow-x: hidden; } body { margin: 0; overflow-x: hidden; color: var(--text); background: radial-gradient(circle at 10% 5%, rgba(244, 201, 93, 0.16), transparent 28%), radial-gradient(circle at 88% 2%, rgba(63, 140, 145, 0.12), transparent 27%), linear-gradient(180deg, #fffdf8 0%, var(--cream) 100%); font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif; line-height: 1.8; letter-spacing: 0.025em; } body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; background-image: linear-gradient(rgba(15, 47, 73, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(15, 47, 73, 0.025) 1px, transparent 1px); background-size: 48px 48px; } a { color: inherit; text-decoration: none; } button, input, textarea, select { font: inherit; } img, svg { display: block; max-width: 100%; } .container { width: min(var(--container), calc(100% - 40px)); margin-inline: auto; } .section { position: relative; padding: clamp(72px, 8vw, 118px) 0; } .section-label { margin: 0 0 12px; color: var(--orange); font-size: 13px; font-weight: 900; letter-spacing: 0.16em; } .section-title { margin: 0; color: var(--ink); font-size: clamp(32px, 4.5vw, 58px); font-weight: 950; line-height: 1.15; letter-spacing: -0.045em; } .section-copy { margin: 0; color: var(--text); font-size: 16px; } .section-heading { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr); gap: clamp(24px, 5vw, 64px); align-items: end; margin-bottom: 42px; } .header { position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(222, 216, 207, 0.85); background: rgba(255, 253, 248, 0.9); backdrop-filter: blur(18px); } .header-inner { width: min(1240px, calc(100% - 32px)); min-height: 78px; margin-inline: auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; } .brand { display: flex; align-items: center; gap: 12px; min-width: 210px; } .brand-mark { position: relative; width: 48px; height: 48px; flex: 0 0 auto; overflow: hidden; border-radius: 15px; background: var(--navy); box-shadow: 0 12px 26px rgba(15, 47, 73, 0.2); } .brand-mark::before, .brand-mark::after { content: ""; position: absolute; top: -8px; height: 65px; border-radius: 4px; transform: rotate(-17deg); } .brand-mark::before { left: 13px; width: 14px; background: var(--yellow); } .brand-mark::after { left: 30px; width: 9px; background: var(--orange); } .brand-text { display: flex; flex-direction: column; line-height: 1.25; } .brand-name { color: var(--navy); font-size: 16px; font-weight: 950; letter-spacing: 0.07em; } .brand-note { color: var(--muted); font-size: 10px; font-weight: 800; letter-spacing: 0.14em; } .global-nav { display: flex; align-items: center; gap: clamp(16px, 2.5vw, 34px); color: var(--navy); font-size: 13px; font-weight: 900; } .global-nav a { position: relative; padding: 8px 0; white-space: nowrap; } .global-nav a::after { content: ""; position: absolute; right: 0; bottom: 2px; left: 0; height: 2px; border-radius: 99px; background: var(--orange); transform: scaleX(0); transform-origin: right; transition: transform 0.25s ease; } .global-nav a:hover::after, .global-nav a:focus-visible::after { transform: scaleX(1); transform-origin: left; } .header-button { display: inline-flex; min-height: 46px; align-items: center; justify-content: center; padding: 10px 18px; border-radius: 999px; color: var(--white); background: var(--navy); font-size: 13px; font-weight: 900; white-space: nowrap; box-shadow: 0 12px 26px rgba(15, 47, 73, 0.2); transition: transform 0.2s ease, background 0.2s ease; } .header-button:hover, .header-button:focus-visible { background: var(--orange); transform: translateY(-2px); } .hero { position: relative; padding: clamp(58px, 8vw, 118px) 0 clamp(72px, 8vw, 108px); } .hero::after { content: ""; position: absolute; right: -140px; bottom: -40px; width: 410px; height: 410px; border: 1px solid rgba(15, 47, 73, 0.09); border-radius: 50%; box-shadow: 0 0 0 45px rgba(15, 47, 73, 0.025), 0 0 0 90px rgba(15, 47, 73, 0.018); pointer-events: none; } .hero-grid { display: grid; grid-template-columns: minmax(0, 1.04fr) minmax(360px, 0.96fr); gap: clamp(36px, 6vw, 78px); align-items: center; } .hero-tag { display: inline-flex; align-items: center; gap: 10px; padding: 9px 15px; border: 1px solid rgba(15, 47, 73, 0.12); border-radius: 999px; color: var(--navy); background: rgba(255, 255, 255, 0.72); font-size: 13px; font-weight: 900; box-shadow: 0 10px 24px rgba(15, 47, 73, 0.06); } .hero-tag::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 0 6px rgba(233, 115, 50, 0.13); } .hero-title { margin: 26px 0 22px; color: var(--ink); font-size: clamp(46px, 7vw, 94px); font-weight: 950; line-height: 0.98; letter-spacing: -0.065em; } .hero-title span { color: var(--orange); } .hero-catch { margin: 0 0 18px; color: var(--navy); font-size: clamp(20px, 2.3vw, 28px); font-weight: 950; line-height: 1.55; } .hero-copy { max-width: 680px; margin: 0; color: var(--text); font-size: 16px; } .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; } .button { display: inline-flex; min-height: 54px; align-items: center; justify-content: center; gap: 10px; padding: 13px 23px; border: 1px solid transparent; border-radius: 999px; font-size: 15px; font-weight: 950; transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease; } .button::after { content: "→"; font-size: 17px; line-height: 1; } .button:hover, .button:focus-visible { transform: translateY(-2px); } .button-primary { color: var(--white); background: var(--orange); box-shadow: 0 16px 34px rgba(233, 115, 50, 0.27); } .button-secondary { color: var(--navy); border-color: rgba(15, 47, 73, 0.14); background: rgba(255, 255, 255, 0.76); box-shadow: 0 12px 28px rgba(15, 47, 73, 0.08); } .hero-note { display: flex; gap: 11px; align-items: flex-start; margin-top: 24px; color: var(--muted); font-size: 13px; font-weight: 700; } .hero-note-icon { width: 18px; height: 18px; flex: 0 0 auto; margin-top: 3px; border-radius: 50%; background: radial-gradient(circle at 50% 50%, var(--white) 0 22%, transparent 24%), var(--blue-green); box-shadow: 0 0 0 5px rgba(63, 140, 145, 0.12); } .hero-visual { position: relative; min-height: 590px; overflow: hidden; border-radius: 42px; background: radial-gradient(circle at 20% 18%, rgba(244, 201, 93, 0.32), transparent 27%), radial-gradient(circle at 85% 16%, rgba(63, 140, 145, 0.33), transparent 28%), linear-gradient(145deg, var(--navy-dark), var(--navy-light)); box-shadow: var(--shadow); isolation: isolate; } .hero-visual::before { content: ""; position: absolute; inset: 28px; border: 1px solid rgba(255, 255, 255, 0.17); border-radius: 30px; background-image: linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px); background-size: 34px 34px; } .visual-building { position: absolute; right: 11%; bottom: 11%; left: 11%; height: 58%; border-right: 10px solid rgba(255, 255, 255, 0.83); border-bottom: 10px solid rgba(255, 255, 255, 0.83); border-left: 10px solid rgba(255, 255, 255, 0.83); } .visual-building::before, .visual-building::after { content: ""; position: absolute; right: 14%; left: 14%; height: 10px; background: rgba(255, 255, 255, 0.83); } .visual-building::before { top: 29%; } .visual-building::after { top: 64%; } .visual-pillar { position: absolute; bottom: 0; width: 10px; height: 100%; background: rgba(255, 255, 255, 0.83); } .visual-pillar:nth-child(1) { left: 25%; } .visual-pillar:nth-child(2) { left: 50%; } .visual-pillar:nth-child(3) { left: 75%; } .visual-label { position: absolute; z-index: 2; padding: 10px 14px; border-radius: 999px; color: var(--navy); background: rgba(255, 255, 255, 0.92); font-size: 13px; font-weight: 950; box-shadow: 0 12px 28px rgba(0, 0, 0, 0.17); } .visual-label:nth-of-type(1) { top: 52px; left: 46px; } .visual-label:nth-of-type(2) { top: 158px; right: 42px; background: var(--yellow); } .visual-label:nth-of-type(3) { bottom: 80px; left: 52px; background: #fff2df; } .yanasho-emblem { position: absolute; right: 38px; bottom: 36px; z-index: 3; width: 152px; height: 152px; display: grid; place-items: center; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 38px; color: var(--white); background: rgba(255, 255, 255, 0.11); text-align: center; transform: rotate(-5deg); backdrop-filter: blur(12px); } .yanasho-emblem strong { display: block; font-size: 29px; font-weight: 950; line-height: 1.1; letter-spacing: -0.04em; } .yanasho-emblem small { display: block; margin-top: 8px; color: rgba(255, 255, 255, 0.73); font-size: 11px; font-weight: 800; letter-spacing: 0.12em; } .about-panel { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 0.82fr); gap: clamp(30px, 5vw, 64px); align-items: center; padding: clamp(28px, 4vw, 48px); border: 1px solid rgba(222, 216, 207, 0.9); border-radius: var(--radius-xl); background: rgba(255, 255, 255, 0.74); box-shadow: var(--shadow-soft); } .about-title { margin: 0 0 16px; color: var(--navy); font-size: clamp(26px, 3.5vw, 44px); font-weight: 950; line-height: 1.25; letter-spacing: -0.035em; } .about-text { margin: 0; font-size: 17px; } .analogy-card { margin-top: 24px; padding: 19px 21px; border: 1px solid rgba(233, 115, 50, 0.16); border-radius: 20px; color: #503825; background: var(--orange-light); font-weight: 850; } .mold-visual { position: relative; min-height: 340px; overflow: hidden; border: 1px solid rgba(15, 47, 73, 0.09); border-radius: 30px; background: radial-gradient(circle at 24% 18%, rgba(244, 201, 93, 0.35), transparent 28%), linear-gradient(150deg, #f6e4c7, #ffffff 58%, #eaf5f4); } .mold-arrow { position: absolute; top: 15%; left: 50%; width: 8px; height: 102px; border-radius: 999px; background: var(--orange); transform: translateX(-50%); } .mold-arrow::after { content: ""; position: absolute; bottom: -1px; left: 50%; width: 24px; height: 24px; border-right: 8px solid var(--orange); border-bottom: 8px solid var(--orange); transform: translateX(-50%) rotate(45deg); } .mold-body { position: absolute; right: 14%; bottom: 19%; left: 14%; height: 34%; border: 10px solid #8c623a; border-top: 0; border-radius: 0 0 15px 15px; background: linear-gradient( 180deg, rgba(63, 140, 145, 0.13), rgba(63, 140, 145, 0.28) ); } .mold-body::before { content: ""; position: absolute; top: -44px; right: 8%; left: 8%; height: 44px; background: rgba(29, 73, 104, 0.72); clip-path: polygon(0 0, 100% 0, 84% 100%, 16% 100%); } .mold-caption { position: absolute; right: 22px; bottom: 22px; left: 22px; padding: 13px 15px; border-radius: 17px; color: var(--navy); background: rgba(255, 255, 255, 0.87); font-size: 14px; font-weight: 950; text-align: center; box-shadow: 0 10px 24px rgba(15, 47, 73, 0.08); } .flow-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; } .flow-card { position: relative; min-height: 260px; overflow: hidden; padding: 24px 20px; border: 1px solid rgba(222, 216, 207, 0.92); border-radius: 26px; background: rgba(255, 255, 255, 0.76); box-shadow: 0 12px 28px rgba(15, 47, 73, 0.065); } .flow-card::before { content: attr(data-number); position: absolute; top: 10px; right: 15px; color: rgba(15, 47, 73, 0.07); font-size: 58px; font-weight: 950; line-height: 1; letter-spacing: -0.08em; } .flow-icon { position: relative; z-index: 1; width: 56px; height: 56px; display: grid; place-items: center; margin-bottom: 19px; border-radius: 18px; color: var(--white); background: var(--navy); font-size: 22px; font-weight: 950; } .flow-card:nth-child(2) .flow-icon { background: var(--navy-light); } .flow-card:nth-child(3) .flow-icon { background: var(--orange); } .flow-card:nth-child(4) .flow-icon { background: var(--blue-green); } .flow-card:nth-child(5) .flow-icon { background: #8c623a; } .flow-card h3 { position: relative; z-index: 1; margin: 0 0 10px; color: var(--navy); font-size: 20px; font-weight: 950; line-height: 1.35; } .flow-card p { position: relative; z-index: 1; margin: 0; color: var(--muted); font-size: 14px; } .day-section { overflow: hidden; color: var(--white); background: radial-gradient(circle at 8% 20%, rgba(244, 201, 93, 0.2), transparent 28%), radial-gradient(circle at 90% 12%, rgba(63, 140, 145, 0.24), transparent 28%), linear-gradient(145deg, var(--navy-dark), var(--navy)); } .day-section::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px); background-size: 48px 48px; pointer-events: none; } .day-section .section-label { color: var(--yellow); } .day-section .section-title, .day-section .section-copy { position: relative; z-index: 1; color: var(--white); } .timeline { position: relative; z-index: 1; display: grid; gap: 14px; } .timeline-row { display: grid; grid-template-columns: 104px minmax(160px, 0.48fr) minmax(0, 1fr); gap: 16px; align-items: stretch; padding: 16px; border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 24px; background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(8px); } .timeline-time { display: grid; place-items: center; min-height: 62px; border-radius: 18px; color: var(--yellow); background: rgba(255, 255, 255, 0.11); font-size: 20px; font-weight: 950; } .timeline-title { display: flex; align-items: center; color: var(--white); font-size: 18px; font-weight: 950; } .timeline-copy { display: flex; align-items: center; margin: 0; color: rgba(255, 255, 255, 0.76); font-size: 14px; } .support-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; } .support-card { padding: 28px; border: 1px solid rgba(222, 216, 207, 0.94); border-radius: 28px; background: rgba(255, 255, 255, 0.76); box-shadow: var(--shadow-soft); } .support-number { width: 50px; height: 50px; display: grid; place-items: center; margin-bottom: 20px; border-radius: 17px; color: var(--white); background: var(--orange); font-size: 22px; font-weight: 950; } .support-card:nth-child(2) .support-number { background: var(--navy-light); } .support-card:nth-child(3) .support-number { background: var(--blue-green); } .support-card h3 { margin: 0 0 11px; color: var(--navy); font-size: 22px; font-weight: 950; line-height: 1.4; } .support-card p { margin: 0; color: var(--muted); font-size: 15px; } .skills-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; } .skill-card { position: relative; min-height: 186px; overflow: hidden; padding: 21px; border: 1px solid rgba(222, 216, 207, 0.92); border-radius: 26px; background: rgba(255, 255, 255, 0.78); box-shadow: 0 10px 24px rgba(15, 47, 73, 0.055); } .skill-card::after { content: ""; position: absolute; right: -28px; bottom: -28px; width: 92px; height: 92px; border-radius: 50%; background: rgba(244, 201, 93, 0.28); } .skill-label { display: block; margin-bottom: 14px; color: var(--orange); font-size: 12px; font-weight: 950; letter-spacing: 0.13em; } .skill-card h3 { margin: 0 0 10px; color: var(--navy); font-size: 20px; font-weight: 950; line-height: 1.35; } .skill-card p { position: relative; z-index: 1; margin: 0; color: var(--muted); font-size: 14px; } .message-panel { position: relative; overflow: hidden; padding: clamp(30px, 5vw, 58px); border: 1px solid rgba(222, 216, 207, 0.93); border-radius: var(--radius-xl); background: radial-gradient(circle at 95% 8%, rgba(244, 201, 93, 0.24), transparent 30%), linear-gradient(135deg, rgba(255, 255, 255, 0.87), rgba(255, 240, 228, 0.72)); box-shadow: var(--shadow); } .message-panel::before { content: "YANASHO"; position: absolute; top: -35px; right: -18px; color: rgba(15, 47, 73, 0.05); font-size: clamp(80px, 14vw, 180px); font-weight: 950; line-height: 1; letter-spacing: -0.08em; } .message-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(250px, 0.52fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 58px); align-items: center; } .president-visual { position: relative; min-height: 350px; overflow: hidden; border: 1px solid rgba(15, 47, 73, 0.1); border-radius: 30px; background: radial-gradient(circle at 50% 28%, #f0bb70 0 48px, transparent 49px), linear-gradient(180deg, transparent 0 40%, var(--navy) 41% 100%); } .president-visual::before { content: ""; position: absolute; top: 42%; left: 50%; width: 200px; height: 240px; border-radius: 85px 85px 18px 18px; background: var(--orange); transform: translateX(-50%); } .president-visual::after { content: "代表メッセージ"; position: absolute; right: 22px; bottom: 22px; left: 22px; padding: 14px; border-radius: 18px; color: var(--navy); background: rgba(255, 255, 255, 0.89); font-size: 15px; font-weight: 950; text-align: center; box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12); } .message-content .section-title { margin-bottom: 22px; } .message-content p { margin: 0 0 15px; } .message-content p:last-child { margin-bottom: 0; color: var(--navy); font-weight: 950; } .works-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; } .work-card { overflow: hidden; border: 1px solid rgba(222, 216, 207, 0.94); border-radius: 26px; background: rgba(255, 255, 255, 0.76); box-shadow: 0 12px 26px rgba(15, 47, 73, 0.06); } .work-visual { position: relative; height: 148px; overflow: hidden; background: radial-gradient(circle at 83% 14%, rgba(244, 201, 93, 0.48), transparent 29%), linear-gradient(145deg, var(--navy), var(--navy-light)); } .work-visual::before { content: ""; position: absolute; right: 18px; bottom: 18px; left: 18px; height: 58px; border: 7px solid rgba(255, 255, 255, 0.78); border-bottom: 0; } .work-visual::after { content: ""; position: absolute; right: 29%; bottom: 18px; width: 7px; height: 58px; background: rgba(255, 255, 255, 0.78); box-shadow: -42px 0 0 rgba(255, 255, 255, 0.78), 42px 0 0 rgba(255, 255, 255, 0.78); } .work-body { padding: 19px; } .work-body h3 { margin: 0 0 8px; color: var(--navy); font-size: 17px; font-weight: 950; line-height: 1.4; } .work-body p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; } .qa-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; } .qa-card { padding: 25px; border: 1px solid rgba(222, 216, 207, 0.94); border-radius: 28px; background: rgba(255, 255, 255, 0.78); box-shadow: 0 12px 28px rgba(15, 47, 73, 0.055); } .qa-question { display: flex; gap: 10px; align-items: flex-start; margin: 0 0 11px; color: var(--navy); font-size: 19px; font-weight: 950; line-height: 1.45; } .qa-question span { flex: 0 0 auto; color: var(--orange); } .qa-card p { margin: 0; color: var(--muted); font-size: 15px; } .closing { padding: clamp(72px, 8vw, 112px) 0; } .closing-card { position: relative; overflow: hidden; padding: clamp(38px, 6vw, 76px); border-radius: 42px; color: var(--white); background: radial-gradient(circle at 10% 20%, rgba(244, 201, 93, 0.2), transparent 30%), radial-gradient(circle at 92% 12%, rgba(63, 140, 145, 0.22), transparent 28%), linear-gradient(135deg, var(--navy-dark), var(--navy-light)); box-shadow: var(--shadow); text-align: center; } .closing-card::before, .closing-card::after { content: ""; position: absolute; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 50%; } .closing-card::before { bottom: -170px; left: -100px; width: 360px; height: 360px; } .closing-card::after { top: -100px; right: -70px; width: 240px; height: 240px; } .closing-card h2 { position: relative; z-index: 1; margin: 0 0 18px; color: var(--white); font-size: clamp(34px, 5vw, 62px); font-weight: 950; line-height: 1.2; letter-spacing: -0.045em; } .closing-card p { position: relative; z-index: 1; max-width: 780px; margin: 0 auto 30px; color: rgba(255, 255, 255, 0.82); font-size: 16px; } .closing-actions { position: relative; z-index: 1; display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; } .closing-actions .button-primary { color: var(--navy); background: var(--yellow); box-shadow: 0 16px 34px rgba(244, 201, 93, 0.22); } .closing-actions .button-secondary { color: var(--white); border-color: rgba(255, 255, 255, 0.24); background: rgba(255, 255, 255, 0.1); } .footer { padding: 38px 0; border-top: 1px solid rgba(222, 216, 207, 0.9); color: var(--muted); font-size: 13px; } .footer-inner { display: flex; justify-content: space-between; gap: 20px; align-items: center; flex-wrap: wrap; } .page-top { position: fixed; right: 20px; bottom: 20px; z-index: 90; width: 50px; height: 50px; display: grid; place-items: center; border: 0; border-radius: 50%; color: var(--white); background: var(--navy); font-size: 20px; font-weight: 950; cursor: pointer; opacity: 0; pointer-events: none; transform: translateY(14px); box-shadow: 0 14px 30px rgba(15, 47, 73, 0.25); transition: opacity 0.25s ease, transform 0.25s ease, background 0.2s ease; } .page-top.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0); } .page-top:hover, .page-top:focus-visible { background: var(--orange); } .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; } .reveal.is-visible { opacity: 1; transform: translateY(0); } @media (max-width: 1080px) { .global-nav { display: none; } .hero-grid, .about-panel, .section-heading, .message-grid { grid-template-columns: 1fr; } .hero-visual { min-height: 510px; } .flow-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .support-grid { grid-template-columns: 1fr; } .skills-grid, .works-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .section-heading { gap: 16px; } } @media (max-width: 760px) { .container { width: min(var(--container), calc(100% - 28px)); } .header-inner { width: calc(100% - 24px); min-height: 68px; gap: 12px; } .brand { min-width: 0; } .brand-mark { width: 41px; height: 41px; border-radius: 12px; } .brand-name { font-size: 14px; } .brand-note { font-size: 9px; } .header-button { padding: 9px 12px; font-size: 11px; } .hero { padding-top: 44px; } .hero-title { font-size: clamp(43px, 14vw, 66px); } .hero-actions, .closing-actions { align-items: stretch; } .button { width: 100%; } .hero-visual { min-height: 440px; border-radius: 30px; } .hero-visual::before { inset: 18px; border-radius: 22px; } .visual-label { padding: 8px 10px; font-size: 11px; } .visual-label:nth-of-type(1) { top: 32px; left: 24px; } .visual-label:nth-of-type(2) { top: 112px; right: 24px; } .visual-label:nth-of-type(3) { bottom: 66px; left: 24px; } .yanasho-emblem { right: 24px; bottom: 24px; width: 118px; height: 118px; border-radius: 28px; } .yanasho-emblem strong { font-size: 22px; } .mold-visual { min-height: 290px; } .flow-grid, .skills-grid, .works-grid, .qa-grid { grid-template-columns: 1fr; } .timeline-row { grid-template-columns: 82px minmax(0, 1fr); } .timeline-copy { grid-column: 1 / -1; } .message-panel, .closing-card { border-radius: 30px; } .president-visual { min-height: 280px; } .footer-inner { display: block; } .footer-inner > * + * { margin-top: 8px; } } @media (max-width: 430px) { .header-button { display: none; } .timeline-row { grid-template-columns: 1fr; } .timeline-time { min-height: 56px; } .timeline-copy { grid-column: auto; } } @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } .reveal { opacity: 1; transform: none; } } </style> </head> <body> <header class="header"> <div class="header-inner"> <a class="brand" href="#top" aria-label="ページ上部へ戻る"> <span class="brand-mark" aria-hidden="true"></span> <span class="brand-text"> <span class="brand-name">柳昌建設株式会社</span> <span class="brand-note">ヤナショーの仕事図鑑</span> </span> </a>
+  <nav class="global-nav" aria-label="ページ内ナビゲーション">
+    <a href="#about">型枠工事とは</a>
+    <a href="#flow">仕事の流れ</a>
+    <a href="#day">1日の仕事</a>
+    <a href="#support">育て方</a>
+    <a href="#works">仕事の価値</a>
+  </nav>
+
+  <a class="header-button" href="#message">高校生のみなさんへ</a>
+</div>
+</header> <main id="top"> <section class="hero"> <div class="container hero-grid"> <div class="reveal"> <div class="hero-tag">ヤナショーの仕事図鑑</div>
+      <h1 class="hero-title">
+        見えない仕事を、<br>
+        <span>見える</span>ように。
+      </h1>
+
+      <p class="hero-catch">
+        完成したら、消える。だから、すごい。
+      </p>
+
+      <p class="hero-copy">
+        柳昌建設の仕事は、建物が完成すると表からは見えなくなります。
+        けれど、建物の強さや安全を支えているのは、その見えない仕事です。
+        このページでは、ヤナショーがどんな仕事をしているのかを、
+        高校生や保護者にもわかりやすく紹介します。
+      </p>
+
+      <div class="hero-actions">
+        <a class="button button-primary" href="#about">仕事を見てみる</a>
+        <a class="button button-secondary" href="#message">社長メッセージへ</a>
+      </div>
+
+      <div class="hero-note">
+        <span class="hero-note-icon" aria-hidden="true"></span>
+        <span>
+          専門知識は必要ありません。型枠工事を、できるだけやさしい言葉で紹介します。
+        </span>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal" aria-label="建物の骨組みを表現したイラスト">
+      <span class="visual-label">建物の形をつくる</span>
+      <span class="visual-label">街の強さを支える</span>
+      <span class="visual-label">完成後は見えなくなる</span>
+
+      <div class="visual-building" aria-hidden="true">
+        <span class="visual-pillar"></span>
+        <span class="visual-pillar"></span>
+        <span class="visual-pillar"></span>
+      </div>
+
+      <div class="yanasho-emblem">
+        <div>
+          <strong>Yanasho</strong>
+          <small>見えない主役</small>
+        </div>
+      </div>
+    </div>
   </div>
-</header>
+</section>
 
-<main>
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy fade-in">
-        <div class="eyebrow">ヤナショーの仕事図鑑</div>
-        <h1>見えない仕事を、<br><span class="accent">見える</span>ように。</h1>
-        <p class="hero-lead">完成したら、消える。だから、すごい。</p>
-        <p class="hero-text">
-          柳昌建設の仕事は、建物が完成すると表からは見えなくなります。
-          でも、建物の強さや安全を支えているのは、その見えない仕事です。
-          このページでは、ヤナショーがどんな仕事をしているのかを、高校生にもわかりやすく紹介します。
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div>
+        <p class="section-label">まず知ってほしいこと</p>
+        <h2 class="section-title">型枠工事って、<br>なんだ？</h2>
+      </div>
+
+      <p class="section-copy">
+        難しく聞こえるかもしれませんが、役割はシンプルです。
+        コンクリートを建物の形にするための「型」をつくります。
+      </p>
+    </div>
+
+    <div class="about-panel reveal">
+      <div>
+        <h3 class="about-title">
+          コンクリートの“形”をつくる仕事です。
+        </h3>
+
+        <p class="about-text">
+          コンクリートは、最初から柱や壁の形をしているわけではありません。
+          まず、木材や金物を使って「型」をつくります。
+          その中にコンクリートを流し込み、固まったあとに型を外す。
+          これが、柳昌建設が手がける型枠工事です。
         </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#about">仕事を見てみる</a>
-          <a class="btn btn-secondary" href="#message">社長メッセージへ</a>
-        </div>
-        <div class="hero-note">
-          <span>●</span>
-          <div>専門知識がなくても大丈夫。型枠工事を、できるだけやさしい言葉で紹介します。</div>
+
+        <div class="analogy-card">
+          たとえるなら、ゼリーを型に流して固めるような仕事です。
+          ただし、相手は大きな建物。だから、正確さとチームワークが必要です。
         </div>
       </div>
 
-      <div class="visual-card fade-in" aria-label="建物の見えない骨組みを表現した抽象ビジュアル">
-        <div class="blueprint"></div>
-        <div class="frame-structure">
-          <span class="pillar p1"></span>
-          <span class="pillar p2"></span>
-          <span class="pillar p3"></span>
-        </div>
-        <div class="work-label one">建物の形をつくる</div>
-        <div class="work-label two">街の強さを支える</div>
-        <div class="work-label three">完成後は見えなくなる</div>
-        <div class="yanasho-badge">
-          <span>
-            <strong>Yanasho</strong>
-            <small>Invisible Hero</small>
-          </span>
+      <div class="mold-visual" aria-label="型にコンクリートを流して建物の形をつくる仕組み">
+        <div class="mold-arrow" aria-hidden="true"></div>
+        <div class="mold-body" aria-hidden="true"></div>
+        <div class="mold-caption">
+          型をつくるから、建物の形ができる。
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-head fade-in">
-        <div>
-          <p class="section-kicker">ABOUT WORK</p>
-          <h2>型枠工事って、<br>なんだ？</h2>
-        </div>
-        <p class="section-lead">
-          難しく聞こえるかもしれませんが、役割はシンプルです。
-          コンクリートを建物の形にするための「型」をつくる仕事です。
-        </p>
+<section class="section" id="flow">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div>
+        <p class="section-label">仕事の流れ</p>
+        <h2 class="section-title">
+          見えなくなるまでの、<br>5つの仕事。
+        </h2>
       </div>
 
-      <div class="intro-panel fade-in">
-        <div>
-          <h3 class="explain-title">コンクリートの“形”をつくる仕事です。</h3>
-          <p class="text-large">
-            コンクリートは、最初から柱や壁の形をしているわけではありません。
-            まず、木材や金物で「型」をつくります。そこにコンクリートを流し込み、
-            固まったあとに型を外す。これが、型枠工事です。
-          </p>
-          <div class="analogy">
-            たとえるなら、ゼリーを型に流して固めるような仕事です。
-            ただし、相手は大きな建物。だから、正確さとチームワークが大切です。
-          </div>
-        </div>
-
-        <div class="mold-graphic" aria-label="型に流して形をつくる仕組みの抽象図">
-          <div class="mold-arrow"></div>
-          <div class="mold-base"></div>
-          <div class="mold-caption">型をつくるから、建物の形ができる。</div>
-        </div>
-      </div>
+      <p class="section-copy">
+        型枠工事は、ただ材料を組み立てる仕事ではありません。
+        図面を読み、順番を考え、仲間と声をかけ合いながら進めます。
+      </p>
     </div>
-  </section>
 
-  <section class="section" id="flow">
-    <div class="container">
-      <div class="section-head fade-in">
-        <div>
-          <p class="section-kicker">WORK FLOW</p>
-          <h2>見えなくなるまでの、<br>5つの仕事。</h2>
-        </div>
-        <p class="section-lead">
-          型枠工事は、ただ材料を組むだけではありません。
-          図面を読み、段取りを考え、仲間と声をかけ合いながら進める仕事です。
-        </p>
-      </div>
-
-      <div class="process">
-        <article class="process-card fade-in" data-step="01">
-          <div class="process-icon">読</div>
-          <h3>図面を読む</h3>
-          <p>建物の形や寸法を確認し、どこに何をつくるのかを理解します。</p>
-        </article>
-        <article class="process-card fade-in" data-step="02">
-          <div class="process-icon">測</div>
-          <h3>位置を出す</h3>
-          <p>柱や壁をつくる場所を確認します。ここがズレると建物もズレます。</p>
-        </article>
-        <article class="process-card fade-in" data-step="03">
-          <div class="process-icon">組</div>
-          <h3>型を組む</h3>
-          <p>材料を使って、コンクリートを流し込むための型をつくります。</p>
-        </article>
-        <article class="process-card fade-in" data-step="04">
-          <div class="process-icon">守</div>
-          <h3>安全を確認</h3>
-          <p>仲間と声をかけ合い、危ない場所や作業手順を確認します。</p>
-        </article>
-        <article class="process-card fade-in" data-step="05">
-          <div class="process-icon">外</div>
-          <h3>型を外す</h3>
-          <p>コンクリートが固まったら型を外します。仕事は見えなくなり、建物の形が残ります。</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section day-section" id="day">
-    <div class="container">
-      <div class="section-head fade-in">
-        <div>
-          <p class="section-kicker">ONE DAY</p>
-          <h2>ヤナショーの<br>1日の仕事。</h2>
-        </div>
-        <p class="section-lead">
-          現場の仕事は、勢いだけでは進みません。
-          準備、確認、休憩、片付けまで、毎日の積み重ねが大切です。
-        </p>
-      </div>
-
-      <div class="timeline">
-        <div class="time-row fade-in">
-          <div class="time">7:30</div>
-          <div class="time-title">現場到着・準備</div>
-          <p class="time-desc">道具や材料を確認します。忘れ物がないか、今日の作業に必要なものを整えます。</p>
-        </div>
-        <div class="time-row fade-in">
-          <div class="time">8:00</div>
-          <div class="time-title">朝礼・安全確認</div>
-          <p class="time-desc">今日の作業内容、危ない場所、注意することを全員で共有します。</p>
-        </div>
-        <div class="time-row fade-in">
-          <div class="time">8:30</div>
-          <div class="time-title">作業開始</div>
-          <p class="time-desc">先輩と一緒に、型枠を組んだり、材料を運んだり、できることから始めます。</p>
-        </div>
-        <div class="time-row fade-in">
-          <div class="time">10:00</div>
-          <div class="time-title">休憩</div>
-          <p class="time-desc">体を使う仕事だからこそ、休むことも大切な仕事です。夏場は特に体調を確認します。</p>
-        </div>
-        <div class="time-row fade-in">
-          <div class="time">12:00</div>
-          <div class="time-title">昼休憩</div>
-          <p class="time-desc">午後に向けてしっかり休みます。仲間との会話で現場の雰囲気もわかってきます。</p>
-        </div>
-        <div class="time-row fade-in">
-          <div class="time">17:00</div>
-          <div class="time-title">片付け・終了</div>
-          <p class="time-desc">使った道具を片付け、現場をきれいにします。明日の作業につながる大事な時間です。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="support">
-    <div class="container">
-      <div class="section-head fade-in">
-        <div>
-          <p class="section-kicker">START GUIDE</p>
-          <h2>最初は、<br>できなくて当たり前。</h2>
-        </div>
-        <p class="section-lead">
-          柳昌建設が大切にしているのは、経験よりも人柄です。
-          道具の名前を知らなくても、現場のことがわからなくても、入ってから一つずつ覚えれば大丈夫です。
-        </p>
-      </div>
-
-      <div class="safe-grid">
-        <article class="safe-card fade-in">
-          <strong>1</strong>
-          <h3>いきなり難しい仕事は任せない</h3>
-          <p>まずは道具の名前、材料の持ち方、安全な動き方から覚えていきます。</p>
-        </article>
-        <article class="safe-card fade-in">
-          <strong>2</strong>
-          <h3>先輩と一緒に動く</h3>
-          <p>一人で悩ませず、現場で声をかけながら、少しずつできることを増やします。</p>
-        </article>
-        <article class="safe-card fade-in">
-          <strong>3</strong>
-          <h3>安全を一番に考える</h3>
-          <p>速さよりも安全。自分と仲間を守ることを、仕事の基本として大切にします。</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-head fade-in">
-        <div>
-          <p class="section-kicker">SKILLS</p>
-          <h2>ヤナショーで<br>身につく力。</h2>
-        </div>
-        <p class="section-lead">
-          型枠工事で身につくのは、職人の技術だけではありません。
-          仕事の進め方、人との関わり方、社会で生きる力も育っていきます。
-        </p>
-      </div>
-
-      <div class="skills">
-        <article class="skill fade-in">
-          <b>SKILL 01</b>
-          <h3>段取り力</h3>
-          <p>作業の順番を考え、効率よく進める力。</p>
-        </article>
-        <article class="skill fade-in">
-          <b>SKILL 02</b>
-          <h3>チームワーク</h3>
-          <p>仲間と声をかけ合い、現場を進める力。</p>
-        </article>
-        <article class="skill fade-in">
-          <b>SKILL 03</b>
-          <h3>正確さ</h3>
-          <p>寸法を守り、きれいな形をつくる力。</p>
-        </article>
-        <article class="skill fade-in">
-          <b>SKILL 04</b>
-          <h3>安全意識</h3>
-          <p>自分と仲間を守るために考える力。</p>
-        </article>
-        <article class="skill fade-in">
-          <b>SKILL 05</b>
-          <h3>一生使える技術</h3>
-          <p>経験を重ねるほど、自分の武器になる力。</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="message">
-    <div class="container">
-      <div class="message-panel fade-in">
-        <div class="message-grid">
-          <div class="person-abstract" aria-label="代表メッセージの抽象イラスト"></div>
-          <div class="message-text">
-            <p class="section-kicker">MESSAGE</p>
-            <h2>高校生のみなさんへ。</h2>
-            <p>
-              最初から、できる人なんていません。
-              道具の名前がわからなくてもいい。現場のことを何も知らなくてもいい。
-              大事なのは、少しずつ覚えようとする気持ちと、まわりの人を大切にする姿勢です。
-            </p>
-            <p>
-              柳昌建設の仕事は、建物が完成すると見えなくなります。
-              でも、その見えない仕事が、建物の強さや安全を支えています。
-              目立つ仕事ではないかもしれません。けれど、誇れる仕事です。
-            </p>
-            <p>
-              あなたの最初の一歩を、私たちは本気で応援します。
-              柳昌建設で、見えない主役になってください。
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="works">
-    <div class="container">
-      <div class="section-head fade-in">
-        <div>
-          <p class="section-kicker">WORKS VALUE</p>
-          <h2>あの場所にも、<br>ヤナショーの仕事。</h2>
-        </div>
-        <p class="section-lead">
-          建物が完成すると型枠工事は見えなくなります。
-          でも、多くの人が訪れる場所、暮らしを支える場所の中に、ヤナショーの仕事があります。
-        </p>
-      </div>
-
-      <div class="works-grid">
-        <article class="work-card fade-in">
-          <div class="work-visual"></div>
-          <div class="work-body">
-            <h3>子どもが集まる場所</h3>
-            <p>遊びや学びの時間を、見えない部分から支える仕事。</p>
-          </div>
-        </article>
-        <article class="work-card fade-in">
-          <div class="work-visual"></div>
-          <div class="work-body">
-            <h3>地域の玄関口</h3>
-            <p>多くの人が訪れる場所の安全と形を支える仕事。</p>
-          </div>
-        </article>
-        <article class="work-card fade-in">
-          <div class="work-visual"></div>
-          <div class="work-body">
-            <h3>スポーツの舞台</h3>
-            <p>選手や観客の時間を、建物の土台から支える仕事。</p>
-          </div>
-        </article>
-        <article class="work-card fade-in">
-          <div class="work-visual"></div>
-          <div class="work-body">
-            <h3>街のランドマーク</h3>
-            <p>記憶に残る建物にも、完成後は見えない仕事がある。</p>
-          </div>
-        </article>
-        <article class="work-card fade-in">
-          <div class="work-visual"></div>
-          <div class="work-body">
-            <h3>暮らしを守る建物</h3>
-            <p>毎日の安心を、見えないところから支える仕事。</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-head fade-in">
-        <div>
-          <p class="section-kicker">Q AND A</p>
-          <h2>気になることを、<br>先に答えます。</h2>
-        </div>
-        <p class="section-lead">
-          高校生、保護者、先生が気になりやすいことを、わかりやすく整理しました。
-        </p>
-      </div>
-
-      <div class="qa-grid">
-        <article class="qa fade-in">
-          <h3><span>Q.</span>建設の知識がなくても大丈夫ですか？</h3>
-          <p>大丈夫です。最初は誰でも未経験です。道具の名前や現場での動き方から、順番に覚えていきます。</p>
-        </article>
-        <article class="qa fade-in">
-          <h3><span>Q.</span>体力に自信がないと難しいですか？</h3>
-          <p>体を使う仕事ですが、無理をさせる仕事ではありません。休憩や安全確認を大切にしながら、少しずつ慣れていきます。</p>
-        </article>
-        <article class="qa fade-in">
-          <h3><span>Q.</span>どんな人が向いていますか？</h3>
-          <p>まじめに覚えようとする人、あいさつができる人、仲間と協力できる人です。最初から器用である必要はありません。</p>
-        </article>
-        <article class="qa fade-in">
-          <h3><span>Q.</span>この仕事の面白さは何ですか？</h3>
-          <p>自分の手でできることが増えていくこと、そして完成した建物を見たときに「自分も関わった」と思えることです。</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="closing">
-    <div class="container">
-      <div class="closing-card fade-in">
-        <h2>完成したら、消える。<br>だから、すごい。</h2>
+    <div class="flow-grid">
+      <article class="flow-card reveal" data-number="01">
+        <div class="flow-icon">読</div>
+        <h3>図面を読む</h3>
         <p>
-          見えない仕事に、本気で向き合う。
-          見えなくなる場所に、誰よりも本気を込める。
-          それが、柳昌建設の仕事です。
+          建物の形や寸法を確認し、どこに何をつくるのかを理解します。
         </p>
-        <div class="closing-actions">
-          <a class="btn btn-primary" href="#about">もう一度、仕事を見る</a>
-          <a class="btn btn-secondary" href="#top">ページ上部へ戻る</a>
+      </article>
+
+      <article class="flow-card reveal" data-number="02">
+        <div class="flow-icon">測</div>
+        <h3>位置を決める</h3>
+        <p>
+          柱や壁をつくる場所を確認します。最初の正確さが建物を支えます。
+        </p>
+      </article>
+
+      <article class="flow-card reveal" data-number="03">
+        <div class="flow-icon">組</div>
+        <h3>型を組む</h3>
+        <p>
+          木材や金物を使い、コンクリートを流し込むための型をつくります。
+        </p>
+      </article>
+
+      <article class="flow-card reveal" data-number="04">
+        <div class="flow-icon">守</div>
+        <h3>安全を確認する</h3>
+        <p>
+          作業手順や危険な場所を確認し、仲間と声をかけ合います。
+        </p>
+      </article>
+
+      <article class="flow-card reveal" data-number="05">
+        <div class="flow-icon">外</div>
+        <h3>型を外す</h3>
+        <p>
+          コンクリートが固まったら型を外します。仕事は消え、建物の形が残ります。
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section day-section" id="day">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div>
+        <p class="section-label">ある日の仕事</p>
+        <h2 class="section-title">
+          ヤナショーの<br>1日。
+        </h2>
+      </div>
+
+      <p class="section-copy">
+        現場の仕事は、勢いだけでは進みません。
+        準備、確認、休憩、片付けまで、毎日の積み重ねが大切です。
+      </p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-row reveal">
+        <div class="timeline-time">7:30</div>
+        <div class="timeline-title">現場到着・準備</div>
+        <p class="timeline-copy">
+          道具や材料を確認し、今日の作業に必要な準備を整えます。
+        </p>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="timeline-time">8:00</div>
+        <div class="timeline-title">朝礼・安全確認</div>
+        <p class="timeline-copy">
+          今日の作業内容、危険な場所、注意することを全員で共有します。
+        </p>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="timeline-time">8:30</div>
+        <div class="timeline-title">作業開始</div>
+        <p class="timeline-copy">
+          先輩と一緒に、材料を運んだり、型枠を組んだり、できることから始めます。
+        </p>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="timeline-time">10:00</div>
+        <div class="timeline-title">休憩</div>
+        <p class="timeline-copy">
+          体を使う仕事だからこそ、休むことも大切です。体調も確認します。
+        </p>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="timeline-time">12:00</div>
+        <div class="timeline-title">昼休憩</div>
+        <p class="timeline-copy">
+          午後の作業に向けて、食事を取り、しっかり体を休めます。
+        </p>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="timeline-time">17:00</div>
+        <div class="timeline-title">片付け・終了</div>
+        <p class="timeline-copy">
+          道具を片付け、現場をきれいにします。明日につながる大切な仕事です。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="support">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div>
+        <p class="section-label">ヤナショーの育て方</p>
+        <h2 class="section-title">
+          最初は、<br>できなくて当たり前。
+        </h2>
+      </div>
+
+      <p class="section-copy">
+        柳昌建設が大切にしているのは、経験よりも人柄です。
+        道具の名前や現場の動き方は、入社してから一つずつ覚えれば大丈夫です。
+      </p>
+    </div>
+
+    <div class="support-grid">
+      <article class="support-card reveal">
+        <div class="support-number">1</div>
+        <h3>いきなり難しい仕事は任せない</h3>
+        <p>
+          まずは道具の名前、材料の扱い方、安全な動き方から覚えます。
+        </p>
+      </article>
+
+      <article class="support-card reveal">
+        <div class="support-number">2</div>
+        <h3>先輩と一緒に現場で覚える</h3>
+        <p>
+          一人で悩ませず、声をかけながら、できることを少しずつ増やします。
+        </p>
+      </article>
+
+      <article class="support-card reveal">
+        <div class="support-number">3</div>
+        <h3>速さより、安全を大切にする</h3>
+        <p>
+          自分と仲間を守ることが仕事の基本です。無理をさせる育て方はしません。
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div>
+        <p class="section-label">働きながら育つ力</p>
+        <h2 class="section-title">
+          ヤナショーで<br>身につくもの。
+        </h2>
+      </div>
+
+      <p class="section-copy">
+        型枠工事で身につくのは、職人の技術だけではありません。
+        仕事の進め方、人との関わり方、社会で生きる力も育っていきます。
+      </p>
+    </div>
+
+    <div class="skills-grid">
+      <article class="skill-card reveal">
+        <span class="skill-label">身につく力 01</span>
+        <h3>段取り力</h3>
+        <p>
+          作業の順番を考え、効率よく仕事を進める力。
+        </p>
+      </article>
+
+      <article class="skill-card reveal">
+        <span class="skill-label">身につく力 02</span>
+        <h3>チームワーク</h3>
+        <p>
+          仲間と声をかけ合い、一緒に現場を進める力。
+        </p>
+      </article>
+
+      <article class="skill-card reveal">
+        <span class="skill-label">身につく力 03</span>
+        <h3>正確さ</h3>
+        <p>
+          寸法を守り、きれいな形をつくる集中力。
+        </p>
+      </article>
+
+      <article class="skill-card reveal">
+        <span class="skill-label">身につく力 04</span>
+        <h3>安全意識</h3>
+        <p>
+          自分と仲間を守るために考え、行動する力。
+        </p>
+      </article>
+
+      <article class="skill-card reveal">
+        <span class="skill-label">身につく力 05</span>
+        <h3>一生使える技術</h3>
+        <p>
+          経験を重ねるほど、自分の強みになる職人の技術。
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="message">
+  <div class="container">
+    <div class="message-panel reveal">
+      <div class="message-grid">
+        <div class="president-visual" aria-label="柳昌建設代表者を表現したイラスト"></div>
+
+        <div class="message-content">
+          <p class="section-label">社長から高校生のみなさんへ</p>
+          <h2 class="section-title">
+            最初から、<br>できる人なんていない。
+          </h2>
+
+          <p>
+            道具の名前がわからなくてもいい。
+            現場のことを何も知らなくてもいい。
+            大事なのは、少しずつ覚えようとする気持ちと、
+            まわりの人を大切にする姿勢です。
+          </p>
+
+          <p>
+            柳昌建設の仕事は、建物が完成すると見えなくなります。
+            けれど、その見えない仕事が、建物の強さや安全を支えています。
+            目立つ仕事ではないかもしれません。
+            それでも、自分の仕事を誇れる瞬間があります。
+          </p>
+
+          <p>
+            「少し気になる」「一度現場を見てみたい」
+            その気持ちが、最初の一歩です。
+            あなたの挑戦を、私たちは本気で応援します。
+          </p>
+
+          <p>
+            柳昌建設で、見えない主役になってください。
+          </p>
         </div>
       </div>
     </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container footer-inner">
-    <div>柳昌建設株式会社｜ヤナショーの仕事図鑑</div>
-    <div>© 柳昌建設株式会社 All Rights Reserved.</div>
   </div>
-</footer>
+</section>
 
-<button class="to-top" type="button" aria-label="ページ上部へ戻る">↑</button>
-</div> <script> const targets = document.querySelectorAll('.fade-in'); const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); } }); }, { threshold: 0.12 }); targets.forEach((target) => observer.observe(target)); const toTop = document.querySelector('.to-top'); window.addEventListener('scroll', () => { if (window.scrollY > 600) { toTop.classList.add('is-show'); } else { toTop.classList.remove('is-show'); } }, { passive: true }); toTop.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); }); </script> </body> </html>
+<section class="section" id="works">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div>
+        <p class="section-label">仕事が支えているもの</p>
+        <h2 class="section-title">
+          あの場所にも、<br>ヤナショーの仕事。
+        </h2>
+      </div>
+
+      <p class="section-copy">
+        建物が完成すると、型枠工事は見えなくなります。
+        けれど、人が集まる場所や暮らしを守る場所の中に、ヤナショーの仕事があります。
+      </p>
+    </div>
+
+    <div class="works-grid">
+      <article class="work-card reveal">
+        <div class="work-visual" aria-hidden="true"></div>
+        <div class="work-body">
+          <h3>子どもが集まる場所</h3>
+          <p>
+            遊びや学びの時間を、見えない部分から支えます。
+          </p>
+        </div>
+      </article>
+
+      <article class="work-card reveal">
+        <div class="work-visual" aria-hidden="true"></div>
+        <div class="work-body">
+          <h3>地域の玄関口</h3>
+          <p>
+            多くの人が訪れる場所の安全と形を支えます。
+          </p>
+        </div>
+      </article>
+
+      <article class="work-card reveal">
+        <div class="work-visual" aria-hidden="true"></div>
+        <div class="work-body">
+          <h3>スポーツの舞台</h3>
+          <p>
+            選手や観客の時間を、建物の土台から支えます。
+          </p>
+        </div>
+      </article>
+
+      <article class="work-card reveal">
+        <div class="work-visual" aria-hidden="true"></div>
+        <div class="work-body">
+          <h3>街のランドマーク</h3>
+          <p>
+            記憶に残る建物にも、見えない仕事があります。
+          </p>
+        </div>
+      </article>
+
+      <article class="work-card reveal">
+        <div class="work-visual" aria-hidden="true"></div>
+        <div class="work-body">
+          <h3>暮らしを守る建物</h3>
+          <p>
+            毎日の安心を、見えないところから支えます。
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div>
+        <p class="section-label">よくある質問</p>
+        <h2 class="section-title">
+          気になることに、<br>先に答えます。
+        </h2>
+      </div>
+
+      <p class="section-copy">
+        高校生、保護者、学校の先生が気になりやすいことを、わかりやすくまとめました。
+      </p>
+    </div>
+
+    <div class="qa-grid">
+      <article class="qa-card reveal">
+        <h3 class="qa-question">
+          <span>Q.</span>
+          建設の知識がなくても大丈夫ですか？
+        </h3>
+        <p>
+          大丈夫です。最初は誰でも未経験です。
+          道具の名前や現場での動き方から、順番に覚えていきます。
+        </p>
+      </article>
+
+      <article class="qa-card reveal">
+        <h3 class="qa-question">
+          <span>Q.</span>
+          体力に自信がないと難しいですか？
+        </h3>
+        <p>
+          体を使う仕事ですが、無理をさせる仕事ではありません。
+          休憩や安全確認を大切にしながら、少しずつ慣れていきます。
+        </p>
+      </article>
+
+      <article class="qa-card reveal">
+        <h3 class="qa-question">
+          <span>Q.</span>
+          どんな人が向いていますか？
+        </h3>
+        <p>
+          まじめに覚えようとする人、あいさつができる人、
+          仲間と協力できる人です。最初から器用である必要はありません。
+        </p>
+      </article>
+
+      <article class="qa-card reveal">
+        <h3 class="qa-question">
+          <span>Q.</span>
+          この仕事の面白さは何ですか？
+        </h3>
+        <p>
+          自分の手でできることが増えることと、
+          完成した建物を見て「自分も関わった」と思えることです。
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="container">
+    <div class="closing-card reveal">
+      <h2>
+        完成したら、消える。<br>
+        だから、すごい。
+      </h2>
+
+      <p>
+        見えなくなる場所に、誰よりも本気を込める。
+        見えない仕事に、誇りを持って向き合う。
+        それが、柳昌建設の仕事です。
+      </p>
+
+      <div class="closing-actions">
+        <a class="button button-primary" href="#about">もう一度、仕事を見る</a>
+        <a class="button button-secondary" href="#top">ページ上部へ戻る</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main> <footer class="footer"> <div class="container footer-inner"> <div>柳昌建設株式会社｜ヤナショーの仕事図鑑</div> <div>© 柳昌建設株式会社 All Rights Reserved.</div> </div> </footer> <button class="page-top" type="button" aria-label="ページ上部へ戻る"> ↑ </button> <script> const revealTargets = document.querySelectorAll(".reveal"); const revealObserver = new IntersectionObserver( (entries, observer) => { entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add("is-visible"); observer.unobserve(entry.target); } }); }, { threshold: 0.12 } ); revealTargets.forEach((target) => { revealObserver.observe(target); }); const pageTopButton = document.querySelector(".page-top"); window.addEventListener( "scroll", () => { if (window.scrollY > 600) { pageTopButton.classList.add("is-visible"); } else { pageTopButton.classList.remove("is-visible"); } }, { passive: true } ); pageTopButton.addEventListener("click", () => { window.scrollTo({ top: 0, behavior: "smooth" }); }); </script> </body> </html>
