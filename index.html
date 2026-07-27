@@ -1,0 +1,1725 @@
+<!DOCTYPE html> <html lang="ja"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>ヤナショーの仕事図鑑｜柳昌建設株式会社</title> <style> :root { --ink: #15181d; --text: #27313c; --muted: #66717f; --line: #e7e0d7; --base: #fbf7f0; --paper: #fffdf8; --navy: #182d45; --blue: #22577a; --cyan: #4c9aa2; --orange: #e27b2d; --yellow: #f2bf4b; --wood: #8b5e35; --shadow: 0 20px 60px rgba(25, 36, 48, .13); --shadow-soft: 0 12px 32px rgba(25, 36, 48, .09); --radius-xl: 32px; --radius-lg: 24px; --radius-md: 16px; --max: 1180px; }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 18% 10%, rgba(242, 191, 75, .22) 0 14%, transparent 31%),
+    radial-gradient(circle at 84% 6%, rgba(76, 154, 162, .18) 0 13%, transparent 30%),
+    linear-gradient(180deg, #fffaf2 0%, #fbf7f0 38%, #f4efe7 100%);
+  line-height: 1.75;
+  letter-spacing: .02em;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img, svg {
+  max-width: 100%;
+  display: block;
+}
+
+.site-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.site-wrap::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(24, 45, 69, .035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(24, 45, 69, .035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(180deg, rgba(0,0,0,.75), rgba(0,0,0,.15));
+  z-index: -1;
+}
+
+.container {
+  width: min(var(--max), calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 250, 242, .88);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(231, 224, 215, .9);
+}
+
+.header-inner {
+  width: min(1240px, calc(100% - 36px));
+  margin: 0 auto;
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 190px;
+}
+
+.brand-mark {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: var(--navy);
+  position: relative;
+  box-shadow: 0 10px 22px rgba(24, 45, 69, .22);
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+
+.brand-mark::before,
+.brand-mark::after {
+  content: "";
+  position: absolute;
+  background: var(--yellow);
+  transform: rotate(-18deg);
+  border-radius: 3px;
+}
+
+.brand-mark::before {
+  width: 14px;
+  height: 58px;
+  left: 12px;
+  top: -6px;
+}
+
+.brand-mark::after {
+  width: 9px;
+  height: 58px;
+  left: 28px;
+  top: -6px;
+  background: var(--cyan);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.brand-main {
+  font-weight: 900;
+  color: var(--navy);
+  font-size: 17px;
+  letter-spacing: .06em;
+}
+
+.brand-sub {
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(14px, 2.4vw, 30px);
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.nav a {
+  position: relative;
+  padding: 8px 0;
+  white-space: nowrap;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 2px;
+  background: var(--orange);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .25s ease;
+}
+
+.nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.header-cta {
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: var(--navy);
+  color: #fff;
+  font-weight: 900;
+  font-size: 13px;
+  white-space: nowrap;
+  box-shadow: 0 12px 24px rgba(24, 45, 69, .2);
+}
+
+.hero {
+  position: relative;
+  padding: clamp(56px, 8vw, 112px) 0 clamp(54px, 8vw, 92px);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
+  gap: clamp(32px, 5vw, 72px);
+  align-items: center;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border: 1px solid rgba(24, 45, 69, .14);
+  border-radius: 999px;
+  background: rgba(255,255,255,.68);
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  box-shadow: 0 8px 22px rgba(25, 36, 48, .06);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 99px;
+  background: var(--orange);
+  box-shadow: 0 0 0 5px rgba(226, 123, 45, .13);
+}
+
+h1 {
+  margin: 24px 0 20px;
+  color: var(--ink);
+  font-size: clamp(42px, 7vw, 92px);
+  line-height: .98;
+  letter-spacing: -.055em;
+  font-weight: 950;
+}
+
+.hero h1 .accent {
+  color: var(--orange);
+  display: inline-block;
+}
+
+.hero-lead {
+  font-size: clamp(18px, 2.1vw, 25px);
+  font-weight: 900;
+  color: var(--navy);
+  line-height: 1.72;
+  margin: 0 0 18px;
+}
+
+.hero-text {
+  margin: 0;
+  color: var(--text);
+  font-size: 16px;
+  max-width: 660px;
+}
+
+.hero-actions {
+  margin-top: 30px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 13px 21px;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 15px;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  color: #fff;
+  background: var(--orange);
+  box-shadow: 0 16px 34px rgba(226, 123, 45, .28);
+}
+
+.btn-secondary {
+  color: var(--navy);
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(24, 45, 69, .14);
+  box-shadow: 0 12px 30px rgba(25, 36, 48, .08);
+}
+
+.hero-note {
+  margin-top: 22px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.hero-note span {
+  color: var(--orange);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.visual-card {
+  position: relative;
+  min-height: 580px;
+  border-radius: 42px;
+  background:
+    linear-gradient(140deg, rgba(24, 45, 69, .98), rgba(34, 87, 122, .94)),
+    var(--navy);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.visual-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 24% 20%, rgba(242, 191, 75, .35) 0 10%, transparent 24%),
+    radial-gradient(circle at 82% 22%, rgba(76, 154, 162, .38) 0 8%, transparent 25%),
+    linear-gradient(120deg, transparent 0 44%, rgba(255,255,255,.08) 44% 46%, transparent 46% 100%);
+  z-index: -1;
+}
+
+.blueprint {
+  position: absolute;
+  inset: 30px;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.blueprint::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.frame-structure {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: 11%;
+  height: 58%;
+  border-bottom: 10px solid rgba(255,255,255,.82);
+  border-left: 10px solid rgba(255,255,255,.82);
+  border-right: 10px solid rgba(255,255,255,.82);
+}
+
+.frame-structure::before,
+.frame-structure::after {
+  content: "";
+  position: absolute;
+  left: 16%;
+  right: 16%;
+  height: 10px;
+  background: rgba(255,255,255,.82);
+}
+
+.frame-structure::before {
+  top: 28%;
+}
+
+.frame-structure::after {
+  top: 62%;
+}
+
+.pillar {
+  position: absolute;
+  bottom: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255,255,255,.82);
+}
+
+.pillar.p1 { left: 30%; }
+.pillar.p2 { left: 50%; }
+.pillar.p3 { left: 70%; }
+
+.work-label {
+  position: absolute;
+  border-radius: 999px;
+  color: var(--navy);
+  background: rgba(255,255,255,.9);
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 950;
+  box-shadow: 0 12px 28px rgba(0,0,0,.18);
+}
+
+.work-label.one {
+  left: 42px;
+  top: 52px;
+}
+
+.work-label.two {
+  right: 42px;
+  top: 162px;
+  background: var(--yellow);
+}
+
+.work-label.three {
+  left: 58px;
+  bottom: 72px;
+  background: #fff4de;
+}
+
+.yanasho-badge {
+  position: absolute;
+  right: 38px;
+  bottom: 36px;
+  width: 150px;
+  height: 150px;
+  border-radius: 38px;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.2);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-weight: 950;
+  line-height: 1.15;
+  transform: rotate(-5deg);
+  backdrop-filter: blur(10px);
+}
+
+.yanasho-badge strong {
+  display: block;
+  font-size: 28px;
+  letter-spacing: -.04em;
+}
+
+.yanasho-badge small {
+  display: block;
+  margin-top: 7px;
+  font-size: 11px;
+  letter-spacing: .12em;
+  color: rgba(255,255,255,.74);
+}
+
+.section {
+  padding: clamp(64px, 8vw, 108px) 0;
+  position: relative;
+}
+
+.section-head {
+  display: grid;
+  grid-template-columns: minmax(0, .78fr) minmax(0, 1fr);
+  gap: 38px;
+  align-items: end;
+  margin-bottom: 38px;
+}
+
+.section-kicker {
+  margin: 0 0 10px;
+  color: var(--orange);
+  font-weight: 950;
+  letter-spacing: .14em;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(30px, 4.3vw, 56px);
+  line-height: 1.12;
+  letter-spacing: -.04em;
+  font-weight: 950;
+}
+
+.section-lead {
+  margin: 0;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.intro-panel {
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(231, 224, 215, .92);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+  padding: clamp(24px, 4vw, 42px);
+  display: grid;
+  grid-template-columns: minmax(0, .92fr) minmax(280px, .8fr);
+  gap: clamp(26px, 5vw, 56px);
+  align-items: center;
+}
+
+.explain-title {
+  margin: 0 0 14px;
+  color: var(--navy);
+  font-size: clamp(24px, 3.2vw, 42px);
+  line-height: 1.24;
+  letter-spacing: -.03em;
+  font-weight: 950;
+}
+
+.text-large {
+  font-size: 17px;
+  margin: 0;
+}
+
+.analogy {
+  margin-top: 24px;
+  padding: 18px 20px;
+  border-radius: 20px;
+  background: #fff4df;
+  border: 1px solid rgba(226, 123, 45, .18);
+  color: #49351f;
+  font-weight: 850;
+}
+
+.mold-graphic {
+  aspect-ratio: 1 / .88;
+  min-height: 330px;
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at 28% 22%, rgba(242, 191, 75, .32) 0 12%, transparent 26%),
+    linear-gradient(150deg, #f6e4c5, #ffffff 62%, #eef8f8);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(24, 45, 69, .1);
+}
+
+.mold-base {
+  position: absolute;
+  left: 14%;
+  right: 14%;
+  bottom: 18%;
+  height: 34%;
+  border: 10px solid var(--wood);
+  border-top: 0;
+  border-radius: 0 0 14px 14px;
+  background: linear-gradient(180deg, rgba(76,154,162,.16), rgba(76,154,162,.28));
+  box-shadow: inset 0 -18px 0 rgba(34, 87, 122, .08);
+}
+
+.mold-base::before {
+  content: "";
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: -42px;
+  height: 42px;
+  background: rgba(34,87,122,.72);
+  clip-path: polygon(0 0, 100% 0, 83% 100%, 17% 100%);
+}
+
+.mold-arrow {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  width: 8px;
+  height: 94px;
+  background: var(--orange);
+  border-radius: 99px;
+  transform: translateX(-50%);
+}
+
+.mold-arrow::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 24px;
+  height: 24px;
+  border-right: 8px solid var(--orange);
+  border-bottom: 8px solid var(--orange);
+  transform: translateX(-50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+.mold-caption {
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 22px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.82);
+  color: var(--navy);
+  font-weight: 950;
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(25,36,48,.08);
+}
+
+.process {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.process-card {
+  min-height: 248px;
+  padding: 22px 18px;
+  border-radius: 26px;
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(231, 224, 215, .95);
+  box-shadow: 0 12px 28px rgba(25,36,48,.07);
+  position: relative;
+  overflow: hidden;
+}
+
+.process-card::before {
+  content: attr(data-step);
+  position: absolute;
+  right: 16px;
+  top: 10px;
+  color: rgba(24, 45, 69, .08);
+  font-size: 56px;
+  line-height: 1;
+  font-weight: 950;
+  letter-spacing: -.08em;
+}
+
+.process-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+  background: var(--navy);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 950;
+  font-size: 22px;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.process-card:nth-child(2) .process-icon { background: var(--blue); }
+.process-card:nth-child(3) .process-icon { background: var(--orange); }
+.process-card:nth-child(4) .process-icon { background: var(--cyan); }
+.process-card:nth-child(5) .process-icon { background: var(--wood); }
+
+.process-card h3 {
+  margin: 0 0 10px;
+  color: var(--navy);
+  font-size: 19px;
+  line-height: 1.35;
+  font-weight: 950;
+  position: relative;
+  z-index: 1;
+}
+
+.process-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.75;
+  position: relative;
+  z-index: 1;
+}
+
+.day-section {
+  background:
+    linear-gradient(180deg, rgba(24,45,69,.96), rgba(20,38,58,.98)),
+    var(--navy);
+  color: #fff;
+  overflow: hidden;
+}
+
+.day-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(242,191,75,.22) 0 11%, transparent 28%),
+    radial-gradient(circle at 87% 18%, rgba(76,154,162,.26) 0 12%, transparent 27%),
+    linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+  background-size: auto, auto, 46px 46px, 46px 46px;
+  pointer-events: none;
+}
+
+.day-section .section-kicker,
+.day-section h2,
+.day-section .section-lead {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.day-section .section-kicker {
+  color: var(--yellow);
+}
+
+.timeline {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 14px;
+}
+
+.time-row {
+  display: grid;
+  grid-template-columns: 104px minmax(0, .48fr) minmax(0, 1fr);
+  gap: 16px;
+  align-items: stretch;
+  padding: 16px;
+  border-radius: 24px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.14);
+  backdrop-filter: blur(8px);
+}
+
+.time {
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: rgba(255,255,255,.12);
+  color: var(--yellow);
+  font-weight: 950;
+  font-size: 20px;
+  letter-spacing: -.02em;
+}
+
+.time-title {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 950;
+}
+
+.time-desc {
+  margin: 0;
+  color: rgba(255,255,255,.78);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.safe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.safe-card {
+  background: rgba(255,255,255,.75);
+  border: 1px solid rgba(231,224,215,.95);
+  border-radius: 28px;
+  padding: 26px;
+  box-shadow: var(--shadow-soft);
+}
+
+.safe-card strong {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: var(--orange);
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.safe-card:nth-child(2) strong { background: var(--blue); }
+.safe-card:nth-child(3) strong { background: var(--cyan); }
+
+.safe-card h3 {
+  margin: 0 0 10px;
+  color: var(--navy);
+  font-size: 21px;
+  line-height: 1.35;
+  font-weight: 950;
+}
+
+.safe-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.skill {
+  min-height: 180px;
+  border-radius: 26px;
+  padding: 20px;
+  background: var(--paper);
+  border: 1px solid rgba(231,224,215,.92);
+  box-shadow: 0 10px 24px rgba(25,36,48,.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill::after {
+  content: "";
+  position: absolute;
+  right: -26px;
+  bottom: -26px;
+  width: 86px;
+  height: 86px;
+  border-radius: 999px;
+  background: rgba(242,191,75,.26);
+}
+
+.skill b {
+  display: block;
+  color: var(--orange);
+  font-size: 13px;
+  font-weight: 950;
+  letter-spacing: .12em;
+  margin-bottom: 14px;
+}
+
+.skill h3 {
+  margin: 0 0 10px;
+  color: var(--navy);
+  font-size: 20px;
+  line-height: 1.32;
+  font-weight: 950;
+}
+
+.skill p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.message-panel {
+  position: relative;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.83), rgba(255,244,223,.75));
+  border: 1px solid rgba(231,224,215,.94);
+  border-radius: 36px;
+  padding: clamp(28px, 5vw, 54px);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.message-panel::before {
+  content: "YANASHO";
+  position: absolute;
+  right: -18px;
+  top: -38px;
+  color: rgba(24,45,69,.055);
+  font-size: clamp(74px, 13vw, 170px);
+  line-height: 1;
+  font-weight: 950;
+  letter-spacing: -.08em;
+}
+
+.message-grid {
+  display: grid;
+  grid-template-columns: minmax(230px, .52fr) minmax(0, 1fr);
+  gap: clamp(26px, 5vw, 54px);
+  position: relative;
+  z-index: 1;
+  align-items: center;
+}
+
+.person-abstract {
+  min-height: 330px;
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at 50% 27%, #f4c06e 0 46px, transparent 47px),
+    linear-gradient(180deg, transparent 0 38%, var(--navy) 39% 100%);
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(24,45,69,.12);
+}
+
+.person-abstract::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  width: 190px;
+  height: 230px;
+  transform: translateX(-50%);
+  border-radius: 80px 80px 20px 20px;
+  background: var(--orange);
+}
+
+.person-abstract::after {
+  content: "代表メッセージ";
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 22px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.88);
+  color: var(--navy);
+  font-weight: 950;
+  text-align: center;
+  padding: 14px;
+  box-shadow: 0 12px 26px rgba(0,0,0,.12);
+}
+
+.message-text h2 {
+  margin-bottom: 20px;
+}
+
+.message-text p {
+  margin: 0 0 14px;
+}
+
+.message-text p:last-child {
+  margin-bottom: 0;
+  font-weight: 900;
+  color: var(--navy);
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.work-card {
+  border-radius: 26px;
+  background: rgba(255,255,255,.76);
+  border: 1px solid rgba(231,224,215,.96);
+  overflow: hidden;
+  box-shadow: 0 12px 26px rgba(25,36,48,.06);
+}
+
+.work-visual {
+  height: 142px;
+  position: relative;
+  background:
+    linear-gradient(150deg, rgba(24,45,69,.92), rgba(34,87,122,.84));
+  overflow: hidden;
+}
+
+.work-visual::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  height: 56px;
+  border: 7px solid rgba(255,255,255,.78);
+  border-bottom: 0;
+}
+
+.work-visual::after {
+  content: "";
+  position: absolute;
+  right: -22px;
+  top: -22px;
+  width: 96px;
+  height: 96px;
+  border-radius: 999px;
+  background: rgba(242,191,75,.48);
+}
+
+.work-body {
+  padding: 18px;
+}
+
+.work-body h3 {
+  margin: 0 0 8px;
+  color: var(--navy);
+  font-size: 17px;
+  line-height: 1.35;
+  font-weight: 950;
+}
+
+.work-body p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.qa-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.qa {
+  border-radius: 28px;
+  background: rgba(255,255,255,.76);
+  border: 1px solid rgba(231,224,215,.95);
+  box-shadow: 0 12px 28px rgba(25,36,48,.06);
+  padding: 24px;
+}
+
+.qa h3 {
+  margin: 0 0 10px;
+  color: var(--navy);
+  font-size: 19px;
+  line-height: 1.35;
+  font-weight: 950;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.qa h3 span {
+  color: var(--orange);
+  flex: 0 0 auto;
+}
+
+.qa p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.closing {
+  padding: clamp(64px, 8vw, 110px) 0;
+}
+
+.closing-card {
+  position: relative;
+  border-radius: 42px;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(242,191,75,.22) 0 14%, transparent 34%),
+    linear-gradient(135deg, #182d45, #22577a);
+  color: #fff;
+  box-shadow: var(--shadow);
+  padding: clamp(32px, 6vw, 70px);
+  overflow: hidden;
+  text-align: center;
+}
+
+.closing-card::before,
+.closing-card::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.18);
+}
+
+.closing-card::before {
+  width: 330px;
+  height: 330px;
+  left: -110px;
+  bottom: -160px;
+}
+
+.closing-card::after {
+  width: 220px;
+  height: 220px;
+  right: -80px;
+  top: -80px;
+  background: rgba(255,255,255,.05);
+}
+
+.closing-card h2 {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 18px;
+}
+
+.closing-card p {
+  margin: 0 auto 28px;
+  max-width: 780px;
+  color: rgba(255,255,255,.84);
+  font-size: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.closing-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.closing-actions .btn-primary {
+  background: var(--yellow);
+  color: var(--navy);
+  box-shadow: 0 16px 34px rgba(242,191,75,.22);
+}
+
+.closing-actions .btn-secondary {
+  background: rgba(255,255,255,.12);
+  color: #fff;
+  border-color: rgba(255,255,255,.25);
+}
+
+.footer {
+  padding: 38px 0;
+  border-top: 1px solid rgba(231,224,215,.92);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  background: var(--navy);
+  color: #fff;
+  border: 0;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  font-weight: 950;
+  box-shadow: 0 14px 28px rgba(24,45,69,.25);
+  cursor: pointer;
+  z-index: 40;
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: opacity .25s ease, transform .25s ease;
+}
+
+.to-top.is-show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+@media (max-width: 1040px) {
+  .nav {
+    display: none;
+  }
+
+  .hero-grid,
+  .intro-panel,
+  .section-head,
+  .message-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visual-card {
+    min-height: 500px;
+  }
+
+  .process {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skills,
+  .works-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .safe-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-head {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 760px) {
+  .container {
+    width: min(100% - 28px, var(--max));
+  }
+
+  .header-inner {
+    width: calc(100% - 24px);
+    min-height: 66px;
+    gap: 12px;
+  }
+
+  .brand {
+    min-width: 0;
+  }
+
+  .brand-mark {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+  }
+
+  .brand-main {
+    font-size: 14px;
+  }
+
+  .brand-sub {
+    font-size: 9px;
+  }
+
+  .header-cta {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding-top: 42px;
+  }
+
+  h1 {
+    font-size: clamp(40px, 14vw, 62px);
+  }
+
+  .hero-actions,
+  .closing-actions {
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .visual-card {
+    min-height: 430px;
+    border-radius: 30px;
+  }
+
+  .blueprint {
+    inset: 18px;
+    border-radius: 22px;
+  }
+
+  .work-label {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+
+  .work-label.one {
+    left: 24px;
+    top: 32px;
+  }
+
+  .work-label.two {
+    right: 24px;
+    top: 110px;
+  }
+
+  .work-label.three {
+    left: 24px;
+    bottom: 62px;
+  }
+
+  .yanasho-badge {
+    width: 116px;
+    height: 116px;
+    right: 24px;
+    bottom: 24px;
+    border-radius: 28px;
+  }
+
+  .yanasho-badge strong {
+    font-size: 22px;
+  }
+
+  .process,
+  .skills,
+  .works-grid,
+  .qa-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .time-row {
+    grid-template-columns: 78px minmax(0, 1fr);
+  }
+
+  .time-desc {
+    grid-column: 1 / -1;
+  }
+
+  .mold-graphic {
+    min-height: 280px;
+  }
+
+  .message-panel,
+  .closing-card {
+    border-radius: 30px;
+  }
+
+  .person-abstract {
+    min-height: 270px;
+  }
+
+  .footer-inner {
+    display: block;
+  }
+
+  .footer-inner div + div {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .header-cta {
+    display: none;
+  }
+
+  .time-row {
+    grid-template-columns: 1fr;
+  }
+
+  .time {
+    min-height: 54px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity .7s ease, transform .7s ease;
+  }
+
+  .fade-in.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style> </head> <body> <div class="site-wrap" id="top"> <header class="header"> <div class="header-inner"> <a class="brand" href="#top" aria-label="柳昌建設株式会社 トップへ"> <span class="brand-mark" aria-hidden="true"></span> <span class="brand-text"> <span class="brand-main">柳昌建設株式会社</span> <span class="brand-sub">Yanasho Works Guide</span> </span> </a>
+    <nav class="nav" aria-label="ページ内ナビゲーション">
+      <a href="#about">型枠工事とは</a>
+      <a href="#flow">仕事の流れ</a>
+      <a href="#day">1日の仕事</a>
+      <a href="#support">育て方</a>
+      <a href="#works">実績</a>
+    </nav>
+
+    <a class="header-cta" href="#message">高校生のみなさんへ</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy fade-in">
+        <div class="eyebrow">ヤナショーの仕事図鑑</div>
+        <h1>見えない仕事を、<br><span class="accent">見える</span>ように。</h1>
+        <p class="hero-lead">完成したら、消える。だから、すごい。</p>
+        <p class="hero-text">
+          柳昌建設の仕事は、建物が完成すると表からは見えなくなります。
+          でも、建物の強さや安全を支えているのは、その見えない仕事です。
+          このページでは、ヤナショーがどんな仕事をしているのかを、高校生にもわかりやすく紹介します。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#about">仕事を見てみる</a>
+          <a class="btn btn-secondary" href="#message">社長メッセージへ</a>
+        </div>
+        <div class="hero-note">
+          <span>●</span>
+          <div>専門知識がなくても大丈夫。型枠工事を、できるだけやさしい言葉で紹介します。</div>
+        </div>
+      </div>
+
+      <div class="visual-card fade-in" aria-label="建物の見えない骨組みを表現した抽象ビジュアル">
+        <div class="blueprint"></div>
+        <div class="frame-structure">
+          <span class="pillar p1"></span>
+          <span class="pillar p2"></span>
+          <span class="pillar p3"></span>
+        </div>
+        <div class="work-label one">建物の形をつくる</div>
+        <div class="work-label two">街の強さを支える</div>
+        <div class="work-label three">完成後は見えなくなる</div>
+        <div class="yanasho-badge">
+          <span>
+            <strong>Yanasho</strong>
+            <small>Invisible Hero</small>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div>
+          <p class="section-kicker">ABOUT WORK</p>
+          <h2>型枠工事って、<br>なんだ？</h2>
+        </div>
+        <p class="section-lead">
+          難しく聞こえるかもしれませんが、役割はシンプルです。
+          コンクリートを建物の形にするための「型」をつくる仕事です。
+        </p>
+      </div>
+
+      <div class="intro-panel fade-in">
+        <div>
+          <h3 class="explain-title">コンクリートの“形”をつくる仕事です。</h3>
+          <p class="text-large">
+            コンクリートは、最初から柱や壁の形をしているわけではありません。
+            まず、木材や金物で「型」をつくります。そこにコンクリートを流し込み、
+            固まったあとに型を外す。これが、型枠工事です。
+          </p>
+          <div class="analogy">
+            たとえるなら、ゼリーを型に流して固めるような仕事です。
+            ただし、相手は大きな建物。だから、正確さとチームワークが大切です。
+          </div>
+        </div>
+
+        <div class="mold-graphic" aria-label="型に流して形をつくる仕組みの抽象図">
+          <div class="mold-arrow"></div>
+          <div class="mold-base"></div>
+          <div class="mold-caption">型をつくるから、建物の形ができる。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="flow">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div>
+          <p class="section-kicker">WORK FLOW</p>
+          <h2>見えなくなるまでの、<br>5つの仕事。</h2>
+        </div>
+        <p class="section-lead">
+          型枠工事は、ただ材料を組むだけではありません。
+          図面を読み、段取りを考え、仲間と声をかけ合いながら進める仕事です。
+        </p>
+      </div>
+
+      <div class="process">
+        <article class="process-card fade-in" data-step="01">
+          <div class="process-icon">読</div>
+          <h3>図面を読む</h3>
+          <p>建物の形や寸法を確認し、どこに何をつくるのかを理解します。</p>
+        </article>
+        <article class="process-card fade-in" data-step="02">
+          <div class="process-icon">測</div>
+          <h3>位置を出す</h3>
+          <p>柱や壁をつくる場所を確認します。ここがズレると建物もズレます。</p>
+        </article>
+        <article class="process-card fade-in" data-step="03">
+          <div class="process-icon">組</div>
+          <h3>型を組む</h3>
+          <p>材料を使って、コンクリートを流し込むための型をつくります。</p>
+        </article>
+        <article class="process-card fade-in" data-step="04">
+          <div class="process-icon">守</div>
+          <h3>安全を確認</h3>
+          <p>仲間と声をかけ合い、危ない場所や作業手順を確認します。</p>
+        </article>
+        <article class="process-card fade-in" data-step="05">
+          <div class="process-icon">外</div>
+          <h3>型を外す</h3>
+          <p>コンクリートが固まったら型を外します。仕事は見えなくなり、建物の形が残ります。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section day-section" id="day">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div>
+          <p class="section-kicker">ONE DAY</p>
+          <h2>ヤナショーの<br>1日の仕事。</h2>
+        </div>
+        <p class="section-lead">
+          現場の仕事は、勢いだけでは進みません。
+          準備、確認、休憩、片付けまで、毎日の積み重ねが大切です。
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="time-row fade-in">
+          <div class="time">7:30</div>
+          <div class="time-title">現場到着・準備</div>
+          <p class="time-desc">道具や材料を確認します。忘れ物がないか、今日の作業に必要なものを整えます。</p>
+        </div>
+        <div class="time-row fade-in">
+          <div class="time">8:00</div>
+          <div class="time-title">朝礼・安全確認</div>
+          <p class="time-desc">今日の作業内容、危ない場所、注意することを全員で共有します。</p>
+        </div>
+        <div class="time-row fade-in">
+          <div class="time">8:30</div>
+          <div class="time-title">作業開始</div>
+          <p class="time-desc">先輩と一緒に、型枠を組んだり、材料を運んだり、できることから始めます。</p>
+        </div>
+        <div class="time-row fade-in">
+          <div class="time">10:00</div>
+          <div class="time-title">休憩</div>
+          <p class="time-desc">体を使う仕事だからこそ、休むことも大切な仕事です。夏場は特に体調を確認します。</p>
+        </div>
+        <div class="time-row fade-in">
+          <div class="time">12:00</div>
+          <div class="time-title">昼休憩</div>
+          <p class="time-desc">午後に向けてしっかり休みます。仲間との会話で現場の雰囲気もわかってきます。</p>
+        </div>
+        <div class="time-row fade-in">
+          <div class="time">17:00</div>
+          <div class="time-title">片付け・終了</div>
+          <p class="time-desc">使った道具を片付け、現場をきれいにします。明日の作業につながる大事な時間です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="support">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div>
+          <p class="section-kicker">START GUIDE</p>
+          <h2>最初は、<br>できなくて当たり前。</h2>
+        </div>
+        <p class="section-lead">
+          柳昌建設が大切にしているのは、経験よりも人柄です。
+          道具の名前を知らなくても、現場のことがわからなくても、入ってから一つずつ覚えれば大丈夫です。
+        </p>
+      </div>
+
+      <div class="safe-grid">
+        <article class="safe-card fade-in">
+          <strong>1</strong>
+          <h3>いきなり難しい仕事は任せない</h3>
+          <p>まずは道具の名前、材料の持ち方、安全な動き方から覚えていきます。</p>
+        </article>
+        <article class="safe-card fade-in">
+          <strong>2</strong>
+          <h3>先輩と一緒に動く</h3>
+          <p>一人で悩ませず、現場で声をかけながら、少しずつできることを増やします。</p>
+        </article>
+        <article class="safe-card fade-in">
+          <strong>3</strong>
+          <h3>安全を一番に考える</h3>
+          <p>速さよりも安全。自分と仲間を守ることを、仕事の基本として大切にします。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div>
+          <p class="section-kicker">SKILLS</p>
+          <h2>ヤナショーで<br>身につく力。</h2>
+        </div>
+        <p class="section-lead">
+          型枠工事で身につくのは、職人の技術だけではありません。
+          仕事の進め方、人との関わり方、社会で生きる力も育っていきます。
+        </p>
+      </div>
+
+      <div class="skills">
+        <article class="skill fade-in">
+          <b>SKILL 01</b>
+          <h3>段取り力</h3>
+          <p>作業の順番を考え、効率よく進める力。</p>
+        </article>
+        <article class="skill fade-in">
+          <b>SKILL 02</b>
+          <h3>チームワーク</h3>
+          <p>仲間と声をかけ合い、現場を進める力。</p>
+        </article>
+        <article class="skill fade-in">
+          <b>SKILL 03</b>
+          <h3>正確さ</h3>
+          <p>寸法を守り、きれいな形をつくる力。</p>
+        </article>
+        <article class="skill fade-in">
+          <b>SKILL 04</b>
+          <h3>安全意識</h3>
+          <p>自分と仲間を守るために考える力。</p>
+        </article>
+        <article class="skill fade-in">
+          <b>SKILL 05</b>
+          <h3>一生使える技術</h3>
+          <p>経験を重ねるほど、自分の武器になる力。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="message">
+    <div class="container">
+      <div class="message-panel fade-in">
+        <div class="message-grid">
+          <div class="person-abstract" aria-label="代表メッセージの抽象イラスト"></div>
+          <div class="message-text">
+            <p class="section-kicker">MESSAGE</p>
+            <h2>高校生のみなさんへ。</h2>
+            <p>
+              最初から、できる人なんていません。
+              道具の名前がわからなくてもいい。現場のことを何も知らなくてもいい。
+              大事なのは、少しずつ覚えようとする気持ちと、まわりの人を大切にする姿勢です。
+            </p>
+            <p>
+              柳昌建設の仕事は、建物が完成すると見えなくなります。
+              でも、その見えない仕事が、建物の強さや安全を支えています。
+              目立つ仕事ではないかもしれません。けれど、誇れる仕事です。
+            </p>
+            <p>
+              あなたの最初の一歩を、私たちは本気で応援します。
+              柳昌建設で、見えない主役になってください。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="works">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div>
+          <p class="section-kicker">WORKS VALUE</p>
+          <h2>あの場所にも、<br>ヤナショーの仕事。</h2>
+        </div>
+        <p class="section-lead">
+          建物が完成すると型枠工事は見えなくなります。
+          でも、多くの人が訪れる場所、暮らしを支える場所の中に、ヤナショーの仕事があります。
+        </p>
+      </div>
+
+      <div class="works-grid">
+        <article class="work-card fade-in">
+          <div class="work-visual"></div>
+          <div class="work-body">
+            <h3>子どもが集まる場所</h3>
+            <p>遊びや学びの時間を、見えない部分から支える仕事。</p>
+          </div>
+        </article>
+        <article class="work-card fade-in">
+          <div class="work-visual"></div>
+          <div class="work-body">
+            <h3>地域の玄関口</h3>
+            <p>多くの人が訪れる場所の安全と形を支える仕事。</p>
+          </div>
+        </article>
+        <article class="work-card fade-in">
+          <div class="work-visual"></div>
+          <div class="work-body">
+            <h3>スポーツの舞台</h3>
+            <p>選手や観客の時間を、建物の土台から支える仕事。</p>
+          </div>
+        </article>
+        <article class="work-card fade-in">
+          <div class="work-visual"></div>
+          <div class="work-body">
+            <h3>街のランドマーク</h3>
+            <p>記憶に残る建物にも、完成後は見えない仕事がある。</p>
+          </div>
+        </article>
+        <article class="work-card fade-in">
+          <div class="work-visual"></div>
+          <div class="work-body">
+            <h3>暮らしを守る建物</h3>
+            <p>毎日の安心を、見えないところから支える仕事。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div>
+          <p class="section-kicker">Q AND A</p>
+          <h2>気になることを、<br>先に答えます。</h2>
+        </div>
+        <p class="section-lead">
+          高校生、保護者、先生が気になりやすいことを、わかりやすく整理しました。
+        </p>
+      </div>
+
+      <div class="qa-grid">
+        <article class="qa fade-in">
+          <h3><span>Q.</span>建設の知識がなくても大丈夫ですか？</h3>
+          <p>大丈夫です。最初は誰でも未経験です。道具の名前や現場での動き方から、順番に覚えていきます。</p>
+        </article>
+        <article class="qa fade-in">
+          <h3><span>Q.</span>体力に自信がないと難しいですか？</h3>
+          <p>体を使う仕事ですが、無理をさせる仕事ではありません。休憩や安全確認を大切にしながら、少しずつ慣れていきます。</p>
+        </article>
+        <article class="qa fade-in">
+          <h3><span>Q.</span>どんな人が向いていますか？</h3>
+          <p>まじめに覚えようとする人、あいさつができる人、仲間と協力できる人です。最初から器用である必要はありません。</p>
+        </article>
+        <article class="qa fade-in">
+          <h3><span>Q.</span>この仕事の面白さは何ですか？</h3>
+          <p>自分の手でできることが増えていくこと、そして完成した建物を見たときに「自分も関わった」と思えることです。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="container">
+      <div class="closing-card fade-in">
+        <h2>完成したら、消える。<br>だから、すごい。</h2>
+        <p>
+          見えない仕事に、本気で向き合う。
+          見えなくなる場所に、誰よりも本気を込める。
+          それが、柳昌建設の仕事です。
+        </p>
+        <div class="closing-actions">
+          <a class="btn btn-primary" href="#about">もう一度、仕事を見る</a>
+          <a class="btn btn-secondary" href="#top">ページ上部へ戻る</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>柳昌建設株式会社｜ヤナショーの仕事図鑑</div>
+    <div>© 柳昌建設株式会社 All Rights Reserved.</div>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="ページ上部へ戻る">↑</button>
+</div> <script> const targets = document.querySelectorAll('.fade-in'); const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); } }); }, { threshold: 0.12 }); targets.forEach((target) => observer.observe(target)); const toTop = document.querySelector('.to-top'); window.addEventListener('scroll', () => { if (window.scrollY > 600) { toTop.classList.add('is-show'); } else { toTop.classList.remove('is-show'); } }, { passive: true }); toTop.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); }); </script> </body> </html>
